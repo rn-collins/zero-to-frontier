@@ -1,0 +1,38 @@
+SOP DRAFTING — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Describe your process in plain, messy language — the
+AI will structure it into a proper Standard Operating Procedure. You
+don't need to already know SOP format.
+
+---
+
+I need a Standard Operating Procedure (SOP) written for this process:
+
+PROCESS NAME: [e.g. "Onboarding a new client"]
+WHO DOES THIS: [role/person]
+HOW OFTEN: [frequency]
+ROUGH DESCRIPTION OF WHAT HAPPENS, IN ORDER (messy is fine, just get
+it all down):
+[describe every step you can think of, in whatever order they come
+to mind — the AI will organize it]
+
+TOOLS/SYSTEMS INVOLVED: [list any software, accounts, or tools used]
+THINGS THAT COMMONLY GO WRONG: [list any known failure points]
+
+Turn this into a structured SOP with these sections:
+1. Purpose — one sentence on why this process exists
+2. Who's responsible
+3. Step-by-step instructions, numbered, in the correct order (fix
+   any ordering issues from my rough description)
+4. Common mistakes and how to avoid each one
+5. What "done" looks like — how to confirm the process was completed
+   correctly
+6. Related processes or SOPs this connects to, if any
+
+If my description has a gap or an unclear step, ask me a clarifying
+question rather than inventing a plausible-sounding step.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

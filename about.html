@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>About This Project — Zero → Frontier</title>
+<meta name="description" content="Why Zero → Frontier exists, the sourcing standard it holds itself to, how it was built, and how to report a broken link or an error.">
+<meta property="og:title" content="About This Project — Zero → Frontier">
+<meta property="og:description" content="Why Zero → Frontier exists, the sourcing standard it holds itself to, how it was built, and how to report a broken link or an error.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About This Project — Zero → Frontier">
+<meta name="twitter:description" content="Why Zero → Frontier exists, the sourcing standard it holds itself to, how it was built, and how to report a broken link or an error.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.faq{border:1px solid var(--line);background:var(--panel);border-radius:14px;margin-bottom:12px;overflow:hidden;}
+.faq-q{width:100%;text-align:left;background:none;border:none;color:var(--ink);font-weight:700;font-size:0.98rem;padding:18px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-q:hover{background:rgba(255,255,255,0.03);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 22px;}
+.faq[data-open="true"] .faq-a{max-height:400px;padding-bottom:20px;}
+.faq-a p{color:var(--sub);font-size:0.9rem;line-height:1.65;margin:0;}
+.faq-plus{transition:.3s;color:var(--sub2);}
+.faq[data-open="true"] .faq-plus{transform:rotate(45deg);color:var(--c1);}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html">History</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="tools.html">Tools</a>
+      <a href="playbooks.html">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html" class="current">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><path d="M75 22 L122 40 V78 C122 108 102 128 75 138 C48 128 28 108 28 78 V40 Z" stroke="var(--c1)" stroke-width="2" fill="rgba(110,231,255,0.04)"/><path d="M55 78 L69 92 L98 60" stroke="var(--c3)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / About</div>
+    <div class="kicker">Page 11 of 11</div>
+    <h1>About this project</h1>
+    <p class="lede">Zero → Frontier is a free, independent educational reference — not a company, not a product, and not affiliated with or endorsed by any AI lab named on this site (OpenAI, Anthropic, Google, DeepSeek, or any other company mentioned throughout).</p>
+  </div>
+</section>
+
+<section aria-labelledby="standard-h">
+  <div class="wrap">
+    <div class="kicker">The sourcing standard</div>
+    <h2 id="standard-h">Every claim is attributed. No claim is invented.</h2>
+    <p class="lede">Every statistic, quote, and historical claim on this site links to a named, checkable source — a company's own announcement, a peer-reviewed paper, an established outlet's reporting, or an official product's own documentation. Where a claim comes from a fast-moving or secondary source rather than a primary one, that's said plainly rather than dressed up as more authoritative than it is.</p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="num">Research method</div>
+        <h3>Read in full, not skimmed</h3>
+        <p>The underlying source material for this project's history and technique sections was read start to finish, not summarized from search snippets.</p>
+      </div>
+      <div class="card">
+        <div class="num">Verification</div>
+        <h3>Links checked, not assumed</h3>
+        <p>Resource links were checked against real, resolving URLs at the time of publication — see the disclaimer below on how quickly this space moves.</p>
+      </div>
+      <div class="card">
+        <div class="num">Neutrality</div>
+        <h3>Debates presented, not settled</h3>
+        <p>Where genuine disagreement exists among credentialed people — like the AGI debate — this site presents both sides rather than picking a winner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="kicker">Common questions</div>
+    <h2 id="faq-h">Frequently asked questions</h2>
+    <div id="faqList"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Start over, or dive in</div>
+        <h3>Ready to explore?</h3>
+        <p>Begin with the history, or jump straight to whatever you need.</p>
+      </div>
+      <a class="btn btn-primary" href="index.html">Back to Home →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional advice of any kind. Figures move quickly — verify against the linked primary sources.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>
+const faqs=[
+["Is this affiliated with OpenAI, Anthropic, Google, or any AI company mentioned?","No. This is an independent educational project. Company names appear because their products, research, and public statements are the subject matter being explained and cited — not because of any partnership, sponsorship, or endorsement."],
+["Is anything on this site paid, gated, or does it collect my information?","No. There is no account, no email capture, no paywall, and no advertising anywhere on this site. Every page and every linked resource is free to access."],
+["How current is the information here?","This project reflects a mid-2026 snapshot. The frontier model landscape, in particular, changes on a timescale of weeks — the Frontier &amp; AGI page and Resource Library are the two places most worth re-checking against their linked primary sources if you're reading this well after publication."],
+["I found a broken link or an error — how do I report it?","This is a static reference site without a live contact form. If you received this project from someone directly, the most reliable way to report an issue is to reply to whoever shared it with you, so it can be corrected at the source."],
+["Can I share or reuse this site?","Yes — it was built to be shared freely. If you adapt or republish it, please keep the sourcing intact rather than stripping the citations, since the citations are the entire point of the project."],
+["Is this legal, medical, financial, or professional advice?","No. Everything here is educational and informational. Nothing on this site should be relied on as legal, medical, financial, tax, or other professional advice, and nothing here should be treated as a guarantee of any outcome from using any tool, technique, or model discussed."]
+];
+const fl=document.getElementById('faqList');
+faqs.forEach(([q,a])=>{
+  const wrap=document.createElement('div'); wrap.className='faq'; wrap.dataset.open='false';
+  wrap.innerHTML=`<button class="faq-q" aria-expanded="false"><span>${q}</span><span class="faq-plus" aria-hidden="true">+</span></button><div class="faq-a"><p>${a}</p></div>`;
+  const btn=wrap.querySelector('.faq-q');
+  btn.addEventListener('click',()=>{
+    const open = wrap.dataset.open==='true';
+    wrap.dataset.open = open?'false':'true';
+    btn.setAttribute('aria-expanded', open?'false':'true');
+  });
+  fl.appendChild(wrap);
+});
+</script>
+</body>
+</html>

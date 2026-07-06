@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>AI Use Cases: Research, Writing, Meetings, Code — Zero → Frontier</title>
+<meta name="description" content="Sixteen concrete, worked use cases for applying generative AI — research synthesis, meeting notes, content drafting, learning, code help, email triage, document comparison, brainstorming, customer support, spreadsheet help, presentations, translation, performance reviews, study guides, document data extraction, and resume tailoring — each with a real example and human-review notes.">
+<meta property="og:title" content="AI Use Cases: Research, Writing, Meetings, Code — Zero → Frontier">
+<meta property="og:description" content="Sixteen concrete, worked use cases for applying generative AI — research synthesis, meeting notes, content drafting, learning, code help, email triage, document comparison, brainstorming, customer support, spreadsheet help, presentations, translation, performance reviews, study guides, document data extraction, and resume tailoring — each with a real example and human-review notes.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Use Cases: Research, Writing, Meetings, Code — Zero → Frontier">
+<meta name="twitter:description" content="Sixteen concrete, worked use cases for applying generative AI — research synthesis, meeting notes, content drafting, learning, code help, email triage, document comparison, brainstorming, customer support, spreadsheet help, presentations, translation, performance reviews, study guides, document data extraction, and resume tailoring — each with a real example and human-review notes.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.tech-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 28px;}
+.tech-tab{background:var(--panel);border:1px solid var(--line);color:var(--sub);padding:9px 16px;border-radius:999px;font-size:0.8rem;cursor:pointer;transition:.2s;}
+.tech-tab:hover{color:var(--ink);}
+.tech-tab.active{background:var(--grad);color:#04121a;border-color:transparent;font-weight:700;}
+.tech-panel{display:none;}
+.tech-panel.active{display:block;}
+.tech-card{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:26px 28px;margin-bottom:18px;}
+.tech-card h3{margin:0 0 10px;}
+.tech-card .why{color:var(--c1);font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:14px;}
+.tech-card p{color:var(--sub);font-size:0.92rem;line-height:1.7;margin:0 0 14px;}
+.tech-card p strong{color:var(--ink);}
+.code-block{background:#03040a;border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:0.82rem;color:#c9d6f5;white-space:pre-wrap;line-height:1.6;margin:10px 0;}
+.mini-list{margin:10px 0;padding-left:20px;color:var(--sub);font-size:0.88rem;line-height:1.7;}
+.mini-list li strong{color:var(--ink);}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px;}
+.meta-pill{font-size:0.74rem;color:var(--sub2);background:var(--panel-solid);border:1px solid var(--line);border-radius:999px;padding:5px 12px;}
+.meta-pill.review{color:var(--c4);border-color:rgba(251,191,36,0.3);background:rgba(251,191,36,0.06);}
+.rel-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+.rel-pill{font-size:0.76rem;color:var(--c1);background:rgba(110,231,255,0.08);border:1px solid rgba(110,231,255,0.25);padding:5px 12px;border-radius:999px;text-decoration:none;}
+.rel-pill:hover{background:rgba(110,231,255,0.18);}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html">History</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="use-cases.html" class="current">Use Cases</a>
+      <a href="tools.html">Tools</a>
+      <a href="playbooks.html">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><rect x="18" y="55" width="80" height="65" rx="8" stroke="var(--c2)" stroke-width="2" opacity="0.9" fill="rgba(167,139,250,0.05)"/><rect x="38" y="35" width="80" height="65" rx="8" stroke="var(--c1)" stroke-width="2" fill="rgba(110,231,255,0.06)"/><path d="M55 62 L64 71 L82 53" stroke="var(--c3)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M55 82 L100 82" stroke="var(--sub)" stroke-width="2" stroke-linecap="round" opacity="0.6"/></svg></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Use Cases</div>
+    <div class="kicker">Page 05 of 11</div>
+    <h1>Sixteen concrete tasks, worked start to finish</h1>
+    <p class="lede">Not theory — specific, everyday tasks with a real example prompt, what a good output looks like, and exactly what to check before you trust it. Each one names the human-review step explicitly, because that step is not optional.</p>
+    <div class="tech-tabs" id="ucTabs"></div>
+    <div id="ucPanels"></div>
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Next: Tools</div>
+        <h3>Now — which tool should you actually use for this?</h3>
+        <p>ChatGPT vs Claude vs Gemini vs Perplexity, compared honestly, plus how to build a lean stack.</p>
+      </div>
+      <a class="btn btn-primary" href="tools.html">Continue to Tools →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional advice of any kind. Always apply human review before acting on AI output — see each use case's review notes.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>
+const UC = [
+{id:"work",label:"Work & Communication",cards:[
+  {h:"Meeting notes and follow-up",who:"Anyone who sits in recurring meetings and owes a recap or action list afterward.",
+   problem:"Meeting notes are the first thing skipped under time pressure, and the first thing people wish existed a week later.",
+   inputs:"A transcript or your own rough notes from the meeting.",
+   tools:"Any chat model, or a dedicated notetaker — see the <a href=\"tools-meetings.html\">Meetings &amp; Knowledge tools</a> page for a full comparison.",
+   steps:"<ol class=\"mini-list\"><li>Paste the raw transcript or notes, unedited.</li><li>Ask for three sections: decisions made, action items with owners, and open questions.</li><li>Ask it to flag anything ambiguous rather than guessing who owns what.</li></ol>",
+   example:`Here are my raw notes from today's planning meeting: [paste notes]
+Summarize as: (1) Decisions made, (2) Action items — with owner and rough
+deadline if mentioned, (3) Open questions nobody resolved. If an action
+item's owner is unclear, list it under "unassigned" instead of guessing.`,
+   review:"Check every named owner and deadline against your own memory of the meeting — models will occasionally assign an action to the wrong person if the transcript is ambiguous."},
+  {h:"Email drafting and triage",who:"Anyone facing an inbox where most replies are variations of a few recurring types.",
+   problem:"Drafting is usually the bottleneck, not the underlying decision — you already know what you want to say.",
+   inputs:"The email you're replying to, plus a one-line note on your intended answer or tone.",
+   tools:"Any chat model; ChatGPT and Claude both handle this well.",
+   steps:"<ol class=\"mini-list\"><li>Paste the incoming email in full.</li><li>State your intended answer in plain language — don't ask the model to decide for you.</li><li>Specify tone and length (\"brief and warm,\" \"formal, three sentences\").</li></ol>",
+   example:`Here's an email I received: [paste email]
+My answer is: yes, but I need until Friday, not Wednesday.
+Draft a brief, warm reply in three sentences or fewer.`,
+   review:"Read the full draft before sending — never send an AI-drafted reply unread, especially anything touching commitments, dates, or pricing."},
+  {h:"Performance review and feedback writing",who:"Managers writing performance reviews, or anyone giving structured feedback to a peer or direct report.",
+   problem:"Turning a scattered list of observations into fair, specific, well-organized feedback is time-consuming and easy to write unevenly across a team.",
+   inputs:"Your actual, specific observations about the person's work — not a request to invent feedback from nothing.",
+   tools:"Any chat model; keep sensitive personnel details as anonymized as your workplace policy requires.",
+   steps:"<ol class=\"mini-list\"><li>List your real, specific observations — concrete examples, not vague impressions.</li><li>State the review's structure or template if your company has one.</li><li>Ask for balanced, specific language — not generic praise or generic criticism.</li></ol>",
+   example:`Here are my specific observations about [role, no need for real name]
+over this period: [list concrete examples — strengths and growth areas].
+Write this into a performance review section following a strengths /
+growth areas / goals structure. Keep it specific to what I described —
+don't add generic filler praise or criticism I didn't mention.`,
+   review:"Verify every specific claim and example against your own records before finalizing — and check tone carefully, since performance reviews carry real consequences for the person receiving them."}
+]},
+{id:"research",label:"Research & Learning",cards:[
+  {h:"Research synthesis",who:"Anyone who needs to turn several sources into one clear picture — students, analysts, consultants, curious readers.",
+   problem:"Reading five sources and holding the whole picture in your head is slow; a model can hold the structure while you verify the substance.",
+   inputs:"The source documents or links themselves, not a request to \"research this\" from scratch with no sources provided.",
+   tools:"Perplexity, NotebookLM, Elicit, or Consensus for grounded, cited research — see the <a href=\"tools-research.html\">Research tools</a> page for a full comparison.",
+   steps:"<ol class=\"mini-list\"><li>Provide the actual source material — paste it in, or use a tool with real-time web access.</li><li>Ask for a structured synthesis: key claims, where sources agree, where they disagree.</li><li>Ask it to keep every claim attributed to which source it came from.</li></ol>",
+   example:`Here are three articles on [topic]: [paste or link].
+Synthesize them into: (1) Where they agree, (2) Where they meaningfully
+disagree, (3) Any claim only one source makes. Attribute every claim to
+its source by name.`,
+   review:"Spot-check the highest-stakes claims against the original source directly — synthesis can flatten a hedge (\"may cause\") into a certainty (\"causes\") if you don't ask it to preserve that language."},
+  {h:"Learning a new topic quickly",who:"Anyone starting from zero on an unfamiliar subject and needing an honest, structured on-ramp.",
+   problem:"Generic search gives you fragments; a good tutor-style prompt gives you a sequenced explanation you can push back on.",
+   inputs:"Your actual starting knowledge level, stated honestly — this page's own <a href=\"techniques.html\">5-layer context</a> pattern applies directly here.",
+   tools:"Any strong chat model — this is a conversational, iterative task rather than a single-shot one.",
+   steps:"<ol class=\"mini-list\"><li>State your real starting level (\"I know basic algebra, nothing about this field\").</li><li>Ask for a short explanation, then ask it to check your understanding before going further.</li><li>Ask explicitly for where experts disagree, not just the settled consensus.</li></ol>",
+   example:`Teach me [topic] assuming I know [your actual background].
+Explain the core idea in plain language, then ask me one question to
+check I understood it before moving to the next layer. Tell me
+explicitly where this field still has real disagreement among experts.`,
+   review:"Treat specific facts, dates, and numbers as claims to verify separately — a model can explain a concept's logic correctly while still getting a specific figure wrong."},
+  {h:"Document comparison",who:"Anyone reviewing two versions of a contract, policy, proposal, or draft.",
+   problem:"Manually diffing two long documents for meaningful changes — not just wording — is tedious and error-prone.",
+   inputs:"Both full documents, pasted in or uploaded.",
+   tools:"Claude or ChatGPT with document upload support; for anything with legal or financial consequences, this speeds up review, it doesn't replace it.",
+   steps:"<ol class=\"mini-list\"><li>Provide both versions in full.</li><li>Ask specifically for substantive changes — dates, dollar amounts, obligations, deleted clauses — not stylistic edits.</li><li>Ask it to quote the exact before/after text for each change it flags.</li></ol>",
+   example:`Compare Document A and Document B [paste both].
+List only substantive changes: dates, amounts, added/removed
+obligations, deleted or added clauses. For each, quote the exact
+before and after text. Ignore purely stylistic wording changes.`,
+   review:"For anything legally or financially binding, a qualified professional should verify the comparison directly against both source documents — this is a drafting aid, not a substitute for that review."},
+  {h:"Creating study guides and flashcards",who:"Students, or anyone preparing for a certification exam or teaching themselves a technical subject.",
+   problem:"Turning a textbook chapter or lecture notes into an efficient study format (summary, flashcards, practice questions) is repetitive busywork a model handles well.",
+   inputs:"Your actual course material — notes, a textbook excerpt, or a syllabus — not a request to generate content from a topic name alone.",
+   tools:"Any chat model; NotebookLM is particularly well-suited since it grounds its output in the source material you upload — see the <a href=\"tools-research.html\">Research tools</a> page.",
+   steps:"<ol class=\"mini-list\"><li>Provide the actual material to study from, in full.</li><li>Ask for a structured summary plus a set of flashcards (term/definition or Q&amp;A pairs).</li><li>Ask for a short set of practice questions, and to flag which topics they draw from.</li></ol>",
+   example:`Here's my lecture material on [topic]: [paste notes/excerpt].
+Create: (1) a one-page summary of the key concepts, (2) 15 flashcards
+in question/answer format covering the material, (3) 5 practice
+questions with answers, noting which section each one tests.`,
+   review:"Verify factual claims and definitions against your actual course material or textbook — a model summarizing your notes can still introduce a subtly wrong definition, especially for technical or field-specific terms."}
+]},
+{id:"build",label:"Building & Technical",cards:[
+  {h:"Code help and debugging",who:"Anyone writing or maintaining code, from complete beginners to working developers.",
+   problem:"Getting unstuck on a specific error or unfamiliar syntax is one of the highest-leverage uses of a chat model.",
+   inputs:"The actual error message and the relevant code — not a vague description of the problem.",
+   tools:"Claude, ChatGPT, or an AI-native coding tool like Cursor — see the <a href=\"tools-coding.html\">Coding tools</a> page and the <a href=\"techniques.html\">Techniques</a> page's vibe-coding tab.",
+   steps:"<ol class=\"mini-list\"><li>Paste the exact error message in full, not a paraphrase.</li><li>Include the relevant code, and enough surrounding context to reproduce the issue.</li><li>Ask for an explanation of the cause, not just a fixed snippet — so you can catch it yourself next time.</li></ol>",
+   example:`I'm getting this error: [paste exact error].
+Here's the relevant code: [paste code].
+Explain what's causing it, then give me the fix. I want to
+understand the cause, not just copy a patch.`,
+   review:"Run the suggested fix yourself and read the diff before committing — never paste in code you haven't read, especially anything touching authentication, payments, or data deletion."},
+  {h:"Brainstorming and ideation",who:"Anyone stuck at the blank-page stage of any project — naming, planning, structuring, or problem-solving.",
+   problem:"Generating a wide first pass of options is exactly what a model is good at; picking the right one is exactly what it isn't.",
+   inputs:"A clear constraint set — audience, tone, length, what's already been tried and rejected.",
+   tools:"Any chat model; higher creativity/temperature settings if the tool exposes that option.",
+   steps:"<ol class=\"mini-list\"><li>State the real constraints up front, not just the open-ended goal.</li><li>Ask for a wide first pass — 10-15 options, not 3.</li><li>Pick your own favorites, then ask it to refine only those.</li></ol>",
+   example:`I need 12 name options for [thing]. Audience: [who].
+Tone: [tone]. Already rejected: [list]. Give me a wide, varied
+first pass — don't converge on one style. I'll pick my favorites
+and ask you to refine from there.`,
+   review:"Treat the output as raw material, not a final answer — the value is in generating options fast, and the judgment on which one is right stays entirely yours."},
+  {h:"Extracting structured data from documents and images",who:"Anyone who needs to pull specific data out of a receipt, scanned form, screenshot, or PDF into usable, structured text.",
+   problem:"Manually retyping data from images or scanned documents is slow and error-prone; a model with vision input can read and structure it directly.",
+   inputs:"The actual image or document, plus a clear spec of exactly which fields you need extracted.",
+   tools:"Claude, ChatGPT, or Gemini, all of which accept image/PDF uploads directly in their free or low-cost tiers.",
+   steps:"<ol class=\"mini-list\"><li>Upload the actual image or PDF — don't retype it yourself first.</li><li>List the exact fields you need (e.g. date, vendor, amount, line items) rather than asking for a general summary.</li><li>Ask it to output in a structured format (a table or CSV-style list) and to flag any field it couldn't read clearly.</li></ol>",
+   example:`[Upload receipt/form/document]
+Extract the following fields into a table: date, vendor name, total
+amount, and each line item with its price. If any field is unclear
+or unreadable in the image, write "unclear" rather than guessing.`,
+   review:"Manually verify every extracted number against the original image, especially amounts and dates — OCR-style extraction from models can misread similar-looking characters (e.g. 0 vs O, 1 vs 7) and won't always flag its own uncertainty."}
+]},
+{id:"business",label:"Business & Client-Facing",cards:[
+  {h:"Customer support draft responses",who:"Anyone handling recurring customer or client questions, from solo founders to support teams.",
+   problem:"Most support replies are variations on a small set of recurring issues — the answer is known, drafting a clear, on-brand version of it each time is the bottleneck.",
+   inputs:"The customer's actual message, your policy or the correct answer, and your brand's tone.",
+   tools:"Any chat model for drafting; see the <a href=\"tools-writing.html\">Writing tools</a> page for tone/style-specific options.",
+   steps:"<ol class=\"mini-list\"><li>Paste the customer's message in full, including any frustration or specific details.</li><li>State the correct resolution or policy — don't ask the model to invent a policy.</li><li>Specify tone (empathetic, concise, formal) and whether to offer anything beyond the stated resolution.</li></ol>",
+   example:`Customer message: [paste message]
+Our policy/resolution: [state the actual answer, e.g. "we offer a
+refund within 30 days, this order is on day 25"]
+Draft an empathetic, concise reply. Acknowledge their frustration
+in one sentence before the resolution. Do not offer anything beyond
+what I've stated.`,
+   review:"Never let a model invent a policy, discount, or promise on its own — read every reply before sending, especially anything involving money, refunds, or a commitment to the customer."},
+  {h:"Data and spreadsheet help",who:"Anyone working in spreadsheets who needs a formula, a cleanup, or a first-pass analysis.",
+   problem:"Remembering exact spreadsheet formula syntax or writing a one-off data-cleaning script is a common, low-stakes time sink.",
+   inputs:"A description of your data's actual structure (column names, what's in them) and the exact outcome you want.",
+   tools:"Any chat model can write formulas and analysis logic; see <a href=\"tools-coding.html\">Coding tools</a> if the task grows into an actual script.",
+   steps:"<ol class=\"mini-list\"><li>Describe your columns and what's actually in them, including messy edge cases.</li><li>State the exact result you want, not just the general goal.</li><li>Ask for the formula or code plus a plain-English explanation of what it does.</li></ol>",
+   example:`I have a spreadsheet with columns: Date, Customer, Amount, Status.
+Status can be "Paid," "Pending," or blank. I want a formula that
+sums Amount for rows where Status is "Paid" and Date is in the
+current month. Give me the formula and explain what each part does.`,
+   review:"Test any formula or script on a copy of your data first, and manually verify the result against a few rows you can check by hand — don't trust an aggregate number you haven't spot-checked."},
+  {h:"Presentation and deck outlining",who:"Anyone who needs to turn scattered points into a structured, presentable narrative.",
+   problem:"The hard part of a deck is usually the structure and narrative flow, not the slide design — that's exactly where a model helps most.",
+   inputs:"Your raw points or notes, your audience, and how much time you have to present.",
+   tools:"Any chat model for the outline; see the <a href=\"library.html\">Resource Library</a> for free presentation-generation tools if you want AI-assisted slide design too.",
+   steps:"<ol class=\"mini-list\"><li>Provide your raw points, unorganized, and your audience.</li><li>Ask for a slide-by-slide outline with one core idea per slide, not a wall of text per slide.</li><li>Ask it to flag where you need a chart, data point, or example you don't have yet.</li></ol>",
+   example:`Here are my raw points on [topic]: [paste points].
+Audience: [who]. Time: [X minutes].
+Give me a slide-by-slide outline — one core idea per slide, a
+suggested visual for each, and flag any slide where I'd need a
+data point or example I haven't provided.`,
+   review:"Check that every data point or statistic in the final deck traces back to something you can actually source — a model can suggest a plausible-sounding stat that needs to be replaced with a real one before you present it."},
+  {h:"Translation and localization",who:"Anyone communicating with an audience in a language they don't speak fluently, or adapting content for a different region.",
+   problem:"Literal machine translation often misses tone, idiom, and cultural context — the useful version goes beyond word-for-word conversion.",
+   inputs:"The source text, the target language, and context about tone and audience (formal/informal, regional dialect).",
+   tools:"Any strong general chat model handles this well for common languages; verify with a native speaker for anything high-stakes.",
+   steps:"<ol class=\"mini-list\"><li>Provide the full source text and target language.</li><li>State the register — formal business letter vs. casual social post — and target region if it matters (e.g. Latin American vs. European Spanish).</li><li>Ask it to flag any idiom or cultural reference that doesn't translate directly, rather than silently guessing.</li></ol>",
+   example:`Translate this into [language, target region] at a [formal/casual]
+register: [paste text].
+Flag anything — idioms, cultural references, humor — that doesn't
+translate directly, and explain your alternative choice for each.`,
+   review:"For anything customer-facing, legal, or high-stakes, have a native speaker review the translation before it goes out — a model can be fluent and still miss cultural nuance or make a false-friend error."},
+  {h:"Job postings and interview questions",who:"Anyone hiring, from a solo founder making their first hire to a small team's hiring manager.",
+   problem:"Writing a job posting that's specific enough to attract the right candidates — and interview questions that actually test for the role — takes longer than it should for something you may only do occasionally.",
+   inputs:"The real responsibilities of the role, must-have vs. nice-to-have skills, and anything specific about your team or work style.",
+   tools:"Any chat model handles this well; see <a href=\"tools-writing.html\">Writing tools</a> for tone-specific options.",
+   steps:"<ol class=\"mini-list\"><li>Describe the role's actual day-to-day responsibilities, not just a title.</li><li>Separate must-have requirements from nice-to-haves explicitly.</li><li>Ask for the posting plus 5-8 interview questions mapped to specific requirements, not generic questions.</li></ol>",
+   example:`I'm hiring for [role]. Day-to-day responsibilities: [list].
+Must-haves: [list]. Nice-to-haves: [list]. Our team's work style:
+[e.g. "fully remote, async-first, small team"].
+Write a job posting, then give me 6 interview questions, each one
+mapped to a specific requirement it's meant to test for.`,
+   review:"Review job postings for language that could unintentionally discourage qualified candidates (age-coded phrases, unnecessary requirements), and confirm every stated requirement is genuinely necessary for the role before publishing."},
+  {h:"Resume and cover letter tailoring",who:"Anyone job-hunting who needs to adapt one resume and cover letter to fit a specific role, rather than sending a generic version.",
+   problem:"Tailoring a resume to each job posting's actual language and requirements measurably improves response rates, but doing it by hand for every application is slow.",
+   inputs:"Your real resume/work history and the actual job posting you're applying to — not a request to invent experience you don't have.",
+   tools:"Any chat model; be explicit that it must only use experience you actually provide.",
+   steps:"<ol class=\"mini-list\"><li>Paste your real resume/experience and the specific job posting.</li><li>Ask it to identify which of your existing experiences best match the posting's stated requirements.</li><li>Ask for a tailored resume summary and cover letter draft, using only what you actually provided.</li></ol>",
+   example:`Here's my resume/experience: [paste].
+Here's the job posting I'm applying to: [paste].
+Identify which parts of my real experience best match this role's
+stated requirements, then draft a tailored resume summary and a
+cover letter. Use only the experience I've given you — don't invent
+or exaggerate anything.`,
+   review:"Read every line before submitting and confirm nothing has been embellished or invented beyond your actual experience — misrepresenting qualifications on a resume carries real consequences, and this step is non-negotiable."}
+]}
+];
+const tabWrap=document.getElementById('ucTabs'); const panelWrap=document.getElementById('ucPanels');
+tabWrap.setAttribute('role','tablist'); tabWrap.setAttribute('aria-label','Use case category');
+function renderBody(c){
+  return `<div class="meta-row">
+    <span class="meta-pill"><strong style="color:var(--ink);">Who:</strong> ${c.who}</span>
+  </div>
+  <p><strong>Problem it solves:</strong> ${c.problem}</p>
+  <p><strong>Inputs needed:</strong> ${c.inputs}</p>
+  <p><strong>Suggested tools:</strong> ${c.tools}</p>
+  <p><strong>Workflow:</strong></p>${c.steps}
+  <p><strong>Example prompt:</strong></p>
+  <div class="code-block">${c.example}</div>
+  <div class="meta-row"><span class="meta-pill review">⚠ Human review: ${c.review}</span></div>`;
+}
+UC.forEach((sec,i)=>{
+  const tab=document.createElement('button'); tab.className='tech-tab'+(i===0?' active':''); tab.textContent=sec.label;
+  tab.setAttribute('role','tab'); tab.setAttribute('aria-selected',i===0?'true':'false'); tab.id='uctab-'+sec.id; tab.setAttribute('aria-controls','ucpanel-'+sec.id);
+  tab.onclick=()=>{
+    document.querySelectorAll('#ucTabs .tech-tab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false');});
+    tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+    document.querySelectorAll('#ucPanels .tech-panel').forEach(p=>p.classList.remove('active'));
+    document.getElementById('ucpanel-'+sec.id).classList.add('active');
+  };
+  tabWrap.appendChild(tab);
+  const panel=document.createElement('div'); panel.className='tech-panel'+(i===0?' active':''); panel.id='ucpanel-'+sec.id; panel.setAttribute('role','tabpanel'); panel.setAttribute('aria-labelledby','uctab-'+sec.id);
+  sec.cards.forEach(c=>{
+    const card=document.createElement('div'); card.className='tech-card';
+    card.innerHTML=`<h3>${c.h}</h3>${renderBody(c)}`;
+    panel.appendChild(card);
+  });
+  panelWrap.appendChild(panel);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+AI IMPLEMENTATION ROADMAP — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Run this after you've completed the AI Use Case
+Inventory Prompt. Paste in your ranked list of tasks, and the AI
+sequences them into a realistic rollout plan instead of trying
+everything at once.
+
+---
+
+I have this AI Use Case Inventory ranked from my earlier work:
+[paste your inventory table, or just list your tasks with rough
+priority]
+
+TEAM SIZE: [number of people]
+TIME AVAILABLE PER WEEK FOR THIS: [be realistic, e.g. "2-3 hours"]
+
+Build me a phased rollout roadmap:
+
+PHASE 1 (first 2-4 weeks): The single highest-value, lowest-risk use
+case to start with. Explain why this one goes first.
+
+PHASE 2 (next 4-8 weeks): 2-3 more use cases to add once Phase 1 is
+working smoothly — sequenced by a mix of value and ease of adoption.
+
+PHASE 3 (beyond that): Anything higher-risk or higher-effort (e.g.
+tasks touching confidential data, or requiring a governance policy
+first) that should wait until the basics are solid.
+
+For each phase, tell me:
+- What "done" looks like before moving to the next phase
+- The one thing most likely to derail this phase, and how to avoid it
+
+Do not recommend trying to implement everything simultaneously — the
+whole point of this roadmap is sequencing, not a wish list.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

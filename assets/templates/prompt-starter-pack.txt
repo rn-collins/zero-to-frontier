@@ -1,0 +1,71 @@
+PROMPT STARTER PACK — 10 REUSABLE PROMPTS
+Zero → Frontier — free, ungated, no attribution required
+
+Copy any of these and fill in the bracketed parts. See the Techniques
+page for why the structure works (XML tags, 5-layer context).
+
+1. MEETING NOTES
+Here are my raw notes from today's meeting: [paste notes]
+Summarize as: (1) Decisions made, (2) Action items with owner and
+deadline if mentioned, (3) Open questions nobody resolved. If an
+action item's owner is unclear, list it under "unassigned."
+
+2. EMAIL REPLY
+Here's an email I received: [paste email]
+My intended answer is: [your answer in plain language]
+Draft a reply in [tone] and [length].
+
+3. RESEARCH SYNTHESIS
+Here are [N] sources on [topic]: [paste or list them]
+Synthesize into: (1) where they agree, (2) where they meaningfully
+disagree, (3) any claim only one source makes. Attribute every claim
+to its source by name.
+
+4. LEARNING A NEW TOPIC
+Teach me [topic] assuming I know [your real background].
+Explain the core idea in plain language, then ask me one question to
+check I understood before going further. Tell me explicitly where
+this field has real, unsettled disagreement among experts.
+
+5. DOCUMENT COMPARISON
+Compare Document A and Document B: [paste both]
+List only substantive changes — dates, amounts, added or removed
+obligations. For each, quote the exact before and after text. Ignore
+purely stylistic wording changes.
+
+6. CODE DEBUGGING
+I'm getting this error: [paste exact error]
+Here's the relevant code: [paste code]
+Explain what's causing it, then give me the fix. I want to
+understand the cause, not just copy a patch.
+
+7. BRAINSTORMING
+I need [N] options for [thing]. Audience: [who]. Tone: [tone].
+Already rejected: [list]. Give me a wide, varied first pass — don't
+converge on one style yet.
+
+8. WRITING EDIT PASS
+<role>You are a [type] editor for [audience].</role>
+<context>[relevant background on style/past feedback]</context>
+<task>Edit the attached draft for clarity and tone.</task>
+<instructions>
+1. Flag jargon and define or replace it.
+2. Keep sentences under 25 words where possible.
+3. Preserve the author's voice — don't over-formalize.
+</instructions>
+<constraints>Do not change any numbers or factual claims.</constraints>
+<output_format>Return the edited draft only, no commentary.</output_format>
+
+9. META-PROMPT (WHEN YOU DON'T KNOW HOW TO ASK YET)
+I want a prompt that will make you [goal].
+Here are examples of what I want: [paste 2-3 examples]
+Write me the ideal prompt to get this consistently, including what
+tone, structure, and format to specify.
+
+10. DECISION SUPPORT (NOT A DECISION)
+Here's a decision I'm weighing: [describe it]
+Constraints: [list them]
+Lay out the strongest case for each option and the biggest risk of
+each — don't tell me which to pick, help me see the tradeoffs clearly.
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

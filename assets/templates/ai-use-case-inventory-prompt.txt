@@ -1,0 +1,48 @@
+AI USE CASE INVENTORY — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Copy everything below the line into ChatGPT, Claude,
+Gemini, or any chat AI. Fill in the bracketed sections with your own
+information first. The AI will generate a completed inventory table —
+you don't fill this out by hand.
+
+---
+
+I want you to build me an AI Use Case Inventory for my work. Here is
+my situation:
+
+MY ROLE / BUSINESS: [describe what you do, e.g. "solo consultant,
+marketing services for local businesses"]
+
+MY RECURRING TASKS (list as many as you can, rough is fine):
+[e.g. "weekly client status emails, monthly research on industry
+trends, meeting notes 3x/week, drafting social posts, invoicing"]
+
+For EACH task I listed, build a table with these columns:
+1. Task name
+2. How often it happens
+3. What makes it slow (drafting bottleneck vs. research bottleneck
+   vs. decision bottleneck — explain the difference if it's unclear
+   which one applies)
+4. Confidentiality level (Public / Internal / Confidential / Highly
+   sensitive) — flag anything above "Internal" as needing a data-
+   handling check before using AI on it
+5. Reversibility (fully reversible draft vs. hard-to-reverse action
+   like a sent email or filed document) — flag hard-to-reverse tasks
+   as always needing human review before acting
+6. Suggested AI approach (which kind of tool fits: general chat
+   assistant, a research tool, a meeting-notes tool, a coding tool)
+7. Worth trying now? (yes / no / not yet) with a one-line reason
+
+After the table, give me:
+- The single task I should try AI on FIRST, and why it's the best
+  starting point (highest time savings + lowest risk)
+- Any task where you'd recommend NOT using AI at all, and why
+
+Be honest and specific — don't rate everything "yes, worth trying."
+Some of my tasks may genuinely not be good AI candidates, and I want
+you to tell me which ones and why.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

@@ -1,0 +1,33 @@
+AI EXPERIMENTATION LOG — RUN THIS PROMPT
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Use this after trying a new AI tool or workflow for
+the first time. Paste in what happened, and the AI structures it into
+a proper log entry — building a record of what's actually been tried,
+so your team doesn't repeat failed experiments or lose track of wins.
+
+---
+
+I just tried a new AI tool or workflow. Help me log this properly:
+
+WHAT I TRIED: [tool/workflow name and what you were attempting]
+WHAT HAPPENED: [messy notes are fine — what worked, what didn't]
+TIME SPENT: [rough estimate]
+WOULD YOU DO THIS AGAIN?: [yes/no/with changes]
+
+Structure this into a log entry with:
+1. Date and summary (one line)
+2. What was tried and why
+3. Outcome — be honest if it didn't work, don't spin a failure into
+   a false success
+4. Time invested vs. time saved (or lost)
+5. Recommendation: adopt, adopt with changes, or abandon — and why
+6. Tags for searchability (e.g. tool name, task category, team)
+
+If I described a failure, don't soften it — an honest log of what
+doesn't work is exactly as valuable as a log of what does, and softening
+it defeats the purpose of keeping this record at all.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

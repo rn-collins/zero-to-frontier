@@ -1,0 +1,39 @@
+CONTENT REPURPOSING — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Paste one piece of content you've already made
+(a blog post, a talk transcript, a long email). The AI turns it into
+several other formats, so you're not starting from scratch each time.
+
+---
+
+Here is a piece of content I already created:
+[paste your blog post, transcript, article, or long-form piece]
+
+Repurpose it into the following, each as its own clearly labeled
+section:
+
+1. FIVE SOCIAL POSTS (for [platform, e.g. LinkedIn/Twitter/Instagram])
+   — each one a different angle or takeaway from the piece, not the
+   same summary repeated five times.
+
+2. ONE EMAIL NEWSLETTER VERSION — shorter, with a single clear call
+   to action at the end.
+
+3. TEN PULL QUOTES — the most quotable, specific sentences from the
+   original (not paraphrased — pull the actual sentences).
+
+4. ONE SHORT-FORM VIDEO/REEL SCRIPT (60-90 seconds) — a hook in the
+   first line, the core idea, and a closing line.
+
+Constraints:
+- Keep every fact, number, and claim exactly as it appears in the
+  original — do not introduce new statistics or claims.
+- Match my original tone; don't make it more generic or "salesy"
+  than the source material.
+- Flag if the original doesn't have enough substance for any of the
+  four formats above, rather than padding it with filler.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

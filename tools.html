@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>ChatGPT vs Claude vs Gemini vs Perplexity vs Copilot vs Grok vs Meta AI — Zero → Frontier</title>
+<meta name="description" content="Decision support, not reviews: strengths, limitations, privacy, and pricing considerations for seven general AI assistants — ChatGPT, Claude, Gemini, Perplexity, Microsoft Copilot, Grok, and Meta AI — plus how to build a lean AI stack.">
+<meta property="og:title" content="ChatGPT vs Claude vs Gemini vs Perplexity vs Copilot vs Grok vs Meta AI — Zero → Frontier">
+<meta property="og:description" content="Decision support, not reviews: strengths, limitations, privacy, and pricing considerations for seven general AI assistants — ChatGPT, Claude, Gemini, Perplexity, Microsoft Copilot, Grok, and Meta AI — plus how to build a lean AI stack.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT vs Claude vs Gemini vs Perplexity vs Copilot vs Grok vs Meta AI — Zero → Frontier">
+<meta name="twitter:description" content="Decision support, not reviews: strengths, limitations, privacy, and pricing considerations for seven general AI assistants — ChatGPT, Claude, Gemini, Perplexity, Microsoft Copilot, Grok, and Meta AI — plus how to build a lean AI stack.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.tool-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:28px;}
+@media(max-width:800px){.tool-grid{grid-template-columns:1fr;}}
+.tool-card{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:28px 30px;}
+.tool-card .maker{font-size:0.72rem;color:var(--sub2);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;}
+.tool-card h3{margin:0 0 12px;font-size:1.3rem;}
+.tool-row{margin-bottom:14px;}
+.tool-row .lbl{font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:var(--c1);margin-bottom:4px;}
+.tool-row p{margin:0;color:var(--sub);font-size:0.88rem;line-height:1.6;}
+.tool-src{font-size:0.78rem;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);}
+.flag-box{border-left:3px solid var(--c4);background:rgba(251,191,36,0.06);border-radius:0 12px 12px 0;padding:16px 20px;color:var(--sub);font-size:0.86rem;line-height:1.6;margin:26px 0;}
+.flag-box b{color:var(--c4);}
+.stack-steps{counter-reset:stack;margin-top:24px;}
+.stack-step{position:relative;padding-left:44px;margin-bottom:24px;}
+.stack-step::before{counter-increment:stack;content:counter(stack);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:9px;background:var(--panel-solid);border:1px solid var(--line);color:var(--c1);font-weight:800;font-size:0.85rem;display:flex;align-items:center;justify-content:center;}
+.stack-step h3{margin:0 0 6px;font-size:1rem;}
+.stack-step p{margin:0;color:var(--sub);font-size:0.9rem;line-height:1.65;}
+.subnav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 6px;}
+.subnav a{font-size:0.8rem;color:var(--sub);background:var(--panel);border:1px solid var(--line);padding:8px 15px;border-radius:999px;text-decoration:none;}
+.subnav a.on{background:var(--ink);color:var(--bg);}
+.subnav a:hover{color:var(--ink);}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html">History</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="tools.html" class="current">Tools</a>
+      <a href="playbooks.html">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><rect x="25" y="90" width="22" height="35" rx="4" fill="var(--c1)" opacity="0.85"/><rect x="57" y="65" width="22" height="60" rx="4" fill="var(--c2)" opacity="0.85"/><rect x="89" y="40" width="22" height="85" rx="4" fill="var(--c5)" opacity="0.85"/><path d="M25 125 L111 125" stroke="var(--line)" stroke-width="2"/></svg></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Tools</div>
+    <div class="kicker">Tools · 1 of 10</div>
+    <h1>ChatGPT, Claude, Gemini, Perplexity — compared honestly</h1>
+    <p class="lede">This is decision support, not a ranked "best AI tool" listicle — there isn't one universal winner. Strengths, real limitations, privacy posture, and pricing model for each, so you can match the tool to the task instead of the hype. This hub covers seven general assistants — nine more pages go deep on research, meetings, writing, marketing, automation, coding, images, video, and audio/voice tools specifically.</p>
+    <div class="subnav">
+      <a href="tools.html" class="on">Head-to-head</a>
+      <a href="tools-research.html">Research</a>
+      <a href="tools-meetings.html">Meetings &amp; Knowledge</a>
+      <a href="tools-writing.html">Writing</a>
+      <a href="tools-marketing.html">Marketing &amp; Sales</a>
+      <a href="tools-automation.html">Automation</a>
+      <a href="tools-coding.html">Coding</a>
+      <a href="tools-images.html">Images</a>
+      <a href="tools-video.html">Video</a>
+      <a href="tools-audio.html">Audio &amp; Voice</a>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="compare-heading">
+  <div class="wrap">
+    <div class="kicker">Head to head</div>
+    <h2 id="compare-heading">Four tools, four different centers of gravity</h2>
+    <div class="tool-grid">
+      <div class="tool-card reveal">
+        <div class="maker">OpenAI</div>
+        <h3>ChatGPT</h3>
+        <div class="tool-row"><div class="lbl">Best use cases</div><p>General-purpose assistant, broad plugin/app ecosystem, image generation, voice mode, and the largest surface area of third-party integrations.</p></div>
+        <div class="tool-row"><div class="lbl">Strengths</div><p>Most widely adopted, fastest-growing feature set, strong multimodal support (image, voice, file upload), largest user base means the most third-party tutorials and community troubleshooting exist.</p></div>
+        <div class="tool-row"><div class="lbl">Limitations</div><p>Free tier has usage caps that reset periodically and shift over time; heaviest feature set can mean more settings to understand before you're using it well.</p></div>
+        <div class="tool-row"><div class="lbl">Privacy considerations</div><p>Consumer-tier conversations may be used to improve models unless you opt out in settings, or use Business/Enterprise tiers with different data-handling terms — always check OpenAI's current data-use policy before sharing sensitive information.</p></div>
+        <div class="tool-row"><div class="lbl">Pricing model</div><p>Free tier plus paid tiers (historically named Plus/Pro/Business) with higher usage limits and access to newer models first — check OpenAI's own pricing page for current tiers and limits, since these change.</p></div>
+        <div class="tool-src"><a href="https://openai.com/chatgpt/pricing/" target="_blank" rel="noopener noreferrer">OpenAI's official pricing page ↗</a></div>
+      </div>
+      <div class="tool-card reveal">
+        <div class="maker">Anthropic</div>
+        <h3>Claude</h3>
+        <div class="tool-row"><div class="lbl">Best use cases</div><p>Long-document analysis and drafting, coding and agentic/computer-use tasks, and tasks where careful instruction-following matters more than raw speed.</p></div>
+        <div class="tool-row"><div class="lbl">Strengths</div><p>Strong performance on coding and agentic benchmarks (see the <a href="history.html">History</a> page's Claude Opus 4.5 entry), large context windows well-suited to pasting in whole documents, generally careful and literal instruction-following which pairs well with the structured prompting on the <a href="techniques.html">Techniques</a> page.</p></div>
+        <div class="tool-row"><div class="lbl">Limitations</div><p>Smaller third-party plugin ecosystem than ChatGPT; free tier usage limits can be tighter during high-demand periods; no native image-generation model of its own.</p></div>
+        <div class="tool-row"><div class="lbl">Privacy considerations</div><p>Anthropic states consumer conversations are not used to train models by default without explicit opt-in — verify current terms, since data-use policies are updated periodically.</p></div>
+        <div class="tool-row"><div class="lbl">Pricing model</div><p>Free tier plus paid tiers (historically Pro/Max) with higher message limits and priority access to newest models — check Anthropic's own pricing page for current tiers.</p></div>
+        <div class="tool-src"><a href="https://www.anthropic.com/pricing" target="_blank" rel="noopener noreferrer">Anthropic's official pricing page ↗</a></div>
+      </div>
+      <div class="tool-card reveal">
+        <div class="maker">Google</div>
+        <h3>Gemini</h3>
+        <div class="tool-row"><div class="lbl">Best use cases</div><p>Deep integration with Google Workspace (Docs, Sheets, Gmail), native multimodal input including video, and tasks that benefit from Google Search grounding.</p></div>
+        <div class="tool-row"><div class="lbl">Strengths</div><p>Tightest integration if you already live in Google Workspace; strong native multimodal handling; Google AI Studio offers a generous free tier for developers experimenting via API.</p></div>
+        <div class="tool-row"><div class="lbl">Limitations</div><p>Consumer app experience has historically been less consistent across surfaces (app vs. Workspace side panel vs. AI Studio) than ChatGPT's or Claude's single interface.</p></div>
+        <div class="tool-row"><div class="lbl">Privacy considerations</div><p>Data handling differs meaningfully between the free consumer Gemini app, Workspace (business) tiers, and the developer API — check which product you're actually using before assuming a privacy posture.</p></div>
+        <div class="tool-row"><div class="lbl">Pricing model</div><p>Free tier, paid consumer tiers bundled with Google One storage plans, and separate Workspace business pricing — check Google's own pricing page, since the bundling structure is more complex than a single flat tier.</p></div>
+        <div class="tool-src"><a href="https://gemini.google/subscriptions/" target="_blank" rel="noopener noreferrer">Google's official Gemini pricing page ↗</a></div>
+      </div>
+      <div class="tool-card reveal">
+        <div class="maker">Perplexity</div>
+        <h3>Perplexity</h3>
+        <div class="tool-row"><div class="lbl">Best use cases</div><p>Real-time, cited web research — it's built around search-and-cite rather than being a general chat assistant first.</p></div>
+        <div class="tool-row"><div class="lbl">Strengths</div><p>Every answer links its sources by default, making it the strongest fit on this list for the "verify the claim" research pattern described on the <a href="use-cases.html">Use Cases</a> page; handles current-events questions better than models without live search.</p></div>
+        <div class="tool-row"><div class="lbl">Limitations</div><p>Less suited to long, multi-step creative or coding work than ChatGPT or Claude; answer quality depends on the quality of the web sources it finds, which it doesn't fully control.</p></div>
+        <div class="tool-row"><div class="lbl">Privacy considerations</div><p>As a search-and-answer product, queries function differently from a private chat assistant — review Perplexity's own privacy policy for how queries and search history are handled.</p></div>
+        <div class="tool-row"><div class="lbl">Pricing model</div><p>Free tier with limited "Pro" searches per day, paid Pro tier for higher limits and access to a choice of underlying models — check Perplexity's own pricing page for current limits.</p></div>
+        <div class="tool-src"><a href="https://www.perplexity.ai/hub/faq/pplx-pro-billing" target="_blank" rel="noopener noreferrer">Perplexity's official pricing FAQ ↗</a></div>
+      </div>
+    </div>
+    <p style="font-size:0.8rem;color:var(--sub2);margin-top:20px;">Free-tier limits, pricing, and bundled features change frequently for all four products — treat the descriptions above as directional, not exact, and verify against each provider's own page linked above before deciding.</p>
+  </div>
+</section>
+
+<section aria-labelledby="more-assistants-heading">
+  <div class="wrap">
+    <div class="kicker">Also worth knowing</div>
+    <h2 id="more-assistants-heading">Three more assistants with real, large-scale free usage</h2>
+    <p class="lede">These three aren't in the head-to-head above because they're either platform-embedded (Copilot, Meta AI) or newer to mainstream adoption (Grok) — but each has genuinely large free-tier usage worth knowing about.</p>
+    <div class="tool-grid">
+      <div class="tool-card reveal">
+        <div class="maker">Microsoft</div>
+        <h3>Microsoft Copilot</h3>
+        <div class="tool-row"><div class="lbl">Best use cases</div><p>Chat with web citations, real-time screen-share help ("Vision"), voice interaction, image generation, and light agentic tasks like booking or shopping — distinct from GitHub Copilot, the separately-branded coding assistant.</p></div>
+        <div class="tool-row"><div class="lbl">Strengths</div><p>Free with any Microsoft account; "Think Deeper" reasoning and Voice are free and unlimited; unavoidable in office/education contexts already running Microsoft 365.</p></div>
+        <div class="tool-row"><div class="lbl">Limitations</div><p>Word/OneDrive document integrations cap out at 5 files; standalone Copilot Pro subscription was retired for new signups in favor of Microsoft 365 Premium bundling.</p></div>
+        <div class="tool-row"><div class="lbl">Privacy considerations</div><p>Trains on de-identified consumer conversation data by default; opt-out available in Profile → Privacy settings (can take up to 30 days). Enterprise M365 Copilot does not train on tenant data.</p></div>
+        <div class="tool-row"><div class="lbl">Pricing model</div><p>Free with a Microsoft account; Microsoft 365 Premium at $19.99/mo adds AI credits, extended voice/vision time, and agent tasks; business Microsoft 365 Copilot is $30/user/month billed annually.</p></div>
+        <div class="tool-src"><a href="https://www.microsoft.com/en-us/microsoft-copilot/pricing/individuals" target="_blank" rel="noopener noreferrer">Official pricing page ↗</a></div>
+      </div>
+      <div class="tool-card reveal">
+        <div class="maker">xAI</div>
+        <h3>Grok</h3>
+        <div class="tool-row"><div class="lbl">Best use cases</div><p>Everyday reasoning and chat, real-time X/web-sourced current-events search, a dedicated coding model (Grok Build), and image/video generation (Grok Imagine) — deeply integrated into X.</p></div>
+        <div class="tool-row"><div class="lbl">Strengths</div><p>Real-time web/X search and voice are free; large context window (1M tokens on the flagship model); fast-growing adoption as a genuine #3 in US chatbot usage.</p></div>
+        <div class="tool-row"><div class="lbl">Limitations</div><p>xAI's own model card documents a real hallucination/dishonesty rate; the product has had multiple public safety incidents with company apologies — worth knowing before relying on it for sensitive topics.</p></div>
+        <div class="tool-row"><div class="lbl">Privacy considerations</div><p>Trains on user content by default for consumers; logged-out free users cannot opt out at all. Logged-in users can opt out via Incognito Mode. Enterprise/API customers are excluded from training by default.</p></div>
+        <div class="tool-row"><div class="lbl">Pricing model</div><p>Free tier with "generous" but unpublished limits; SuperGrok $30/mo; X Premium tiers ($3-$40/mo) also raise Grok usage limits qualitatively.</p></div>
+        <div class="tool-src"><a href="https://x.ai/pricing" target="_blank" rel="noopener noreferrer">Official pricing page ↗</a></div>
+      </div>
+      <div class="tool-card reveal">
+        <div class="maker">Meta Platforms</div>
+        <h3>Meta AI</h3>
+        <div class="tool-row"><div class="lbl">Best use cases</div><p>Zero-friction everyday assistant embedded directly in WhatsApp, Instagram, Facebook, and Messenger — quick Q&amp;A, in-chat image generation, writing help, without installing a separate app.</p></div>
+        <div class="tool-row"><div class="lbl">Strengths</div><p>Likely the largest reach of any assistant on this page by monthly active users, purely through app-embedding; free across all Meta apps with no published numeric cap.</p></div>
+        <div class="tool-row"><div class="lbl">Limitations</div><p>WhatsApp's Meta AI can only read group-chat messages where explicitly @-mentioned — it's never inserted into end-to-end-encrypted 1:1 personal chats. Regional availability is inconsistent even within a single country.</p></div>
+        <div class="tool-row"><div class="lbl">Privacy considerations</div><p>As of a December 2025 policy update, Meta AI chat data can be used to personalize ads across Facebook/Instagram/Messenger/WhatsApp, with no separate opt-out — this does not currently apply in the EU, UK, or South Korea.</p></div>
+        <div class="tool-row"><div class="lbl">Pricing model</div><p>Free across all Meta apps. A limited "Meta One" subscription test began rolling out in May 2026 in select markets — not yet global, figures still evolving.</p></div>
+        <div class="tool-src"><a href="https://ai.meta.com/meta-ai/" target="_blank" rel="noopener noreferrer">Official product page ↗</a></div>
+      </div>
+    </div>
+    <div class="flag-box reveal"><b>Flagged during research, not smoothed over:</b> Microsoft Copilot, Grok, and Meta AI all decline to publish an exact numeric free-tier usage cap — only qualitative language like "generous" or no stated limit at all. Meta AI's new "Meta One" subscription is a brand-new, limited-market test as of May 2026 and should be treated as evolving, not settled.</div>
+  </div>
+</section>
+
+<section aria-labelledby="stack-heading">
+  <div class="wrap">
+    <div class="kicker">Putting it together</div>
+    <h2 id="stack-heading">How to build a lean AI stack</h2>
+    <p class="lede">You don't need all four. Most people are well served by one general assistant and, optionally, one specialist tool.</p>
+    <div class="stack-steps">
+      <div class="stack-step">
+        <h3>Pick one general-purpose assistant as your default</h3>
+        <p>Claude or ChatGPT, based on which of the two comparisons above better matches your most common task — long documents and coding lean Claude; broadest ecosystem and multimodal features lean ChatGPT.</p>
+      </div>
+      <div class="stack-step">
+        <h3>Add Perplexity only if verified research is a recurring need</h3>
+        <p>If you regularly need current, cited information rather than the model's training-time knowledge, add Perplexity as a second tool specifically for that — not as a replacement for your default assistant.</p>
+      </div>
+      <div class="stack-step">
+        <h3>Add Gemini only if you're deep in Google Workspace</h3>
+        <p>The integration value is real if your documents already live in Docs/Sheets/Gmail; otherwise a fourth general chat tool usually adds tool-switching cost without a matching benefit.</p>
+      </div>
+      <div class="stack-step">
+        <h3>Re-evaluate roughly twice a year, not weekly</h3>
+        <p>Per the <a href="frontier.html">Frontier &amp; AGI</a> page, the model landscape leapfrogs every few weeks — chasing every release adds switching cost with little payoff. Pick a stack, use it well, and revisit deliberately rather than reactively.</p>
+      </div>
+    </div>
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Next: Research tools</div>
+        <h3>Want tools built specifically for research?</h3>
+        <p>Perplexity, NotebookLM, Elicit, Consensus, and Gemini Deep Research, compared in depth.</p>
+      </div>
+      <a class="btn btn-primary" href="tools-research.html">Continue →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional advice of any kind. Tool names, pricing, and free-tier limits change — verify against each tool's own site before relying on it.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

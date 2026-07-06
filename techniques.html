@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>Working AI Techniques: Prompting, Image/Video, Agents, Vibe Coding — Zero → Frontier</title>
+<meta name="description" content="The real working methods: how to structure a prompt with XML tags, the magic-prompt technique, image and video prompting frameworks, agent design principles, and the vibe-coding workflow — with worked examples.">
+<meta property="og:title" content="Working AI Techniques: Prompting, Image/Video, Agents, Vibe Coding — Zero → Frontier">
+<meta property="og:description" content="The real working methods: how to structure a prompt with XML tags, the magic-prompt technique, image and video prompting frameworks, agent design principles, and the vibe-coding workflow — with worked examples.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Working AI Techniques: Prompting, Image/Video, Agents, Vibe Coding — Zero → Frontier">
+<meta name="twitter:description" content="The real working methods: how to structure a prompt with XML tags, the magic-prompt technique, image and video prompting frameworks, agent design principles, and the vibe-coding workflow — with worked examples.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.tech-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 28px;}
+.tech-tab{background:var(--panel);border:1px solid var(--line);color:var(--sub);padding:9px 16px;border-radius:999px;font-size:0.8rem;cursor:pointer;transition:.2s;}
+.tech-tab:hover{color:var(--ink);}
+.tech-tab.active{background:var(--grad);color:#04121a;border-color:transparent;font-weight:700;}
+.tech-panel{display:none;}
+.tech-panel.active{display:block;}
+.tech-card{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:26px 28px;margin-bottom:18px;}
+.tech-card h3{margin:0 0 10px;}
+.tech-card .why{color:var(--c1);font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:14px;}
+.tech-card p{color:var(--sub);font-size:0.92rem;line-height:1.7;margin:0 0 14px;}
+.tech-card p strong{color:var(--ink);}
+.code-block{background:#03040a;border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:0.82rem;color:#c9d6f5;white-space:pre-wrap;line-height:1.6;margin:10px 0;}
+.code-block .tag{color:var(--c3);}
+.mini-list{margin:10px 0;padding-left:20px;color:var(--sub);font-size:0.88rem;line-height:1.7;}
+.mini-list li strong{color:var(--ink);}
+.tech-stack-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;}
+.stack-pill{background:var(--panel-solid);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:0.8rem;color:var(--sub);}
+.stack-pill b{color:var(--ink);}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html">History</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="techniques.html" class="current">Techniques</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="tools.html">Tools</a>
+      <a href="playbooks.html">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><rect x="20" y="35" width="110" height="80" rx="10" stroke="var(--c1)" stroke-width="2"/><circle cx="34" cy="49" r="3" fill="var(--c5)"/><circle cx="46" cy="49" r="3" fill="var(--c4)"/><circle cx="58" cy="49" r="3" fill="var(--c3)"/><path d="M34 70 L48 84 L34 98" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M58 98 L98 98" stroke="var(--c2)" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Techniques</div>
+    <div class="kicker">Page 04 of 11</div>
+    <h1>The working techniques, with real examples</h1>
+    <p class="lede">Not history, not theory — the actual methods used day to day: how to structure a prompt, how to prompt for images and video, how to design an agent, and how to vibe-code an app.</p>
+    <div class="tech-tabs" id="techTabs"></div>
+    <div id="techPanels"></div>
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Next: Use Cases</div>
+        <h3>You know the methods — how do they apply to real tasks?</h3>
+        <p>Sixteen concrete, worked use cases: research synthesis, meeting notes, drafting, code help, and more.</p>
+      </div>
+      <a class="btn btn-primary" href="use-cases.html">Continue to Use Cases →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional advice of any kind. Tool names, pricing, and free-tier limits change — verify against each tool's own site before relying on it.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>
+const TECH = [
+{id:"prompting",label:"Prompting",cards:[
+  {h:"The XML prompt structure",why:"Use for: any non-trivial task where you want reliable, repeatable output",
+   body:`<p>Plain paragraphs of instructions get harder for a model to parse correctly as a prompt grows — it has to guess where one instruction ends and another begins. Wrapping each logical section in a named tag removes that ambiguity, because the model can see exactly where your role definition ends and your task begins.</p>
+   <p>The pattern used across the frontier labs' own documentation: <strong>role → context → task → instructions → constraints → output format</strong>, each in its own tag.</p>
+   <div class="code-block"><span class="tag">&lt;role&gt;</span>You are a senior copy editor for a financial newsletter.<span class="tag">&lt;/role&gt;</span>
+<span class="tag">&lt;context&gt;</span>The newsletter goes to retail investors with basic finance literacy. Past issues avoided jargon like "alpha" or "beta" without defining them.<span class="tag">&lt;/context&gt;</span>
+<span class="tag">&lt;task&gt;</span>Edit the attached draft for clarity and tone.<span class="tag">&lt;/task&gt;</span>
+<span class="tag">&lt;instructions&gt;</span>
+1. Flag any jargon and either define it inline or replace it.
+2. Keep sentences under 25 words where possible.
+3. Preserve the author's voice — don't over-formalize.
+<span class="tag">&lt;/instructions&gt;</span>
+<span class="tag">&lt;constraints&gt;</span>Do not change any numbers or factual claims. Do not add new sections.<span class="tag">&lt;/constraints&gt;</span>
+<span class="tag">&lt;output_format&gt;</span>Return the edited draft only, no commentary.<span class="tag">&lt;/output_format&gt;</span></div>
+   <p><strong>Why this works:</strong> models are trained heavily on structured/marked-up text, so they parse tagged sections with much higher fidelity than an equivalent wall of prose — fewer missed instructions, less drift on long prompts.</p>`},
+  {h:"The \"magic prompt\" (meta-prompting)",why:"Use for: when you don't know how to phrase a prompt well yet",
+   body:`<p>Instead of writing the perfect prompt yourself, you ask the model to write (or improve) the prompt for you. You describe your goal in plain, messy language, and the model returns a polished, structured prompt you can reuse.</p>
+   <div class="code-block">"I want a prompt that will make you write LinkedIn posts in my voice.
+Here are 3 posts I've written before: [paste examples].
+Write me the ideal system prompt to capture this voice consistently,
+including what tone words, sentence rhythm, and structure to use."</div>
+   <p>The model analyzes your examples and hands back a structured prompt — you're using the model to build your own tools instead of trial-and-erroring the phrasing yourself.</p>`},
+  {h:"The 5-layer context framework",why:"Use for: building any reusable assistant, GPT, or agent",
+   body:`<p>Beyond a single prompt, a durable AI setup needs layered context, each answering a different question:</p>
+   <ul class="mini-list">
+   <li><strong>Identity / role</strong> — who is the model acting as? ("a senior tax attorney," not "a lawyer")</li>
+   <li><strong>World / background context</strong> — what does it need to know about your situation that it can't infer?</li>
+   <li><strong>Task</strong> — what specific outcome are you asking for right now?</li>
+   <li><strong>Instructions</strong> — the step-by-step method for getting there</li>
+   <li><strong>Constraints</strong> — the hard boundaries: what NOT to do, format limits, tone limits</li>
+   </ul>
+   <p>Most one-off prompts only specify task and skip the rest — fine for a single question, but it breaks down the moment you want a reusable assistant that behaves consistently across many conversations.</p>`}
+]},
+{id:"visual",label:"Image & Video",cards:[
+  {h:"Image prompting: comma-separated keywords",why:"Use for: Midjourney, Flux, SDXL, GPT Image, Nano Banana — any diffusion-style image model",
+   body:`<p>Image prompting is structurally different from chat prompting: instead of full sentences, you list elements separated by commas, like a creative director calling out what's in a shot. The standard element order: <strong>subject → action → environment → atmosphere → camera → lighting</strong>, and whatever you place first gets the most visual weight.</p>
+   <div class="code-block">Alarm clock on a nightstand showing 6 AM, a man sleeping in bed,
+sports-car painting above the bed, side angle shot,
+ultra-modern bedroom, early morning, ultra-realistic, cinematic style.</div>
+   <p><strong>The one critical keyword:</strong> without an explicit style instruction like "ultra-realistic, cinematic style," the model may default to a cartoon, a 3D render, or a random aesthetic — always specify the visual register you want.</p>
+   <p><strong>Camera angle vocabulary worth memorizing:</strong> a <em>Dutch angle</em> (tilted, for tension), a <em>low angle</em> (looking up, for power), a <em>cowboy shot</em> (torso-up framing), a 100mm lens (extreme close-up) versus a 15–20mm lens (wide, good for interiors/landscapes).</p>`},
+  {h:"Video prompting: natural language, not keywords",why:"Use for: Kling, Veo, Runway, Seedance — any text/image-to-video model",
+   body:`<p>Video models need to understand motion, timing, and narrative — so you switch back to full sentences describing what happens, in order.</p>
+   <div class="code-block">The man walks into the kitchen from the hallway on the right.
+He is dead tired and walking very slowly. After he turns the corner,
+he stumbles and falls to his knees, then quickly gets back up and
+continues walking to the coffee machine.</div>
+   <p><strong>Image-to-video beats text-to-video</strong> for control: uploading a reference image as the first frame gives the model a concrete visual anchor instead of a random starting point. Providing both a <strong>start frame and an end frame</strong> is even stronger — the model generates the transition between two states you specified.</p>
+   <p><strong>Character consistency discipline:</strong> reuse the same reference headshot across every prompt in a scene, and describe wardrobe explicitly and identically every time ("white t-shirt," never just "shirt").</p>
+   <p><strong>The professional workflow, honestly:</strong> validate a prompt on a cheap model at low resolution first, then re-run the winning prompt on a premium model at full resolution for the final. Expect to iterate a prompt many times before a shot works.</p>`}
+]},
+{id:"agents",label:"Agents & Automation",cards:[
+  {h:"Four rules for designing an agent that actually works",why:"Use for: any n8n/Make workflow, Custom GPT, or autonomous agent build",
+   body:`<ul class="mini-list">
+   <li><strong>Scope ruthlessly.</strong> "Personal assistant" fails as a project — too broad. "Weekly expense-report categorizer" ships, because the narrower the scope, the higher the reliability.</li>
+   <li><strong>Give tools, not instructions.</strong> Don't script every step — expose the right tools and let the model figure out the sequence.</li>
+   <li><strong>Plan for failure explicitly.</strong> Every production agent needs a human-in-the-loop checkpoint before anything irreversible, a max-cost ceiling, a max-step limit, and a rollback path.</li>
+   <li><strong>Judge by operational readiness, not benchmark scores.</strong> Measure time-to-resolution, error rate, and real user satisfaction, not leaderboard rank.</li>
+   </ul>`},
+  {h:"The \"AI employee\" pattern (multi-tool personal agent)",why:"Use for: building an assistant that manages email, calendar, and calls — not just chat",
+   body:`<p>A single-purpose chatbot answers questions. A multi-tool agent is wired into several tools at once — email, calendar, a voice layer for phone calls, and web search — and given a standing goal rather than a single instruction, so it can decide which tool to use at each step.</p>
+   <p>Build pattern in practice: connect the agent platform (n8n, Gumloop, Lindy) to each tool via its native integration or an MCP connector, give the agent a clear escalation rule ("if a request involves money, pause and ask me first"), and test it on read-only tasks before letting it take an action that can't be undone.</p>`}
+]},
+{id:"build",label:"Vibe Coding",cards:[
+  {h:"The core loop, and the one rule that prevents disaster",why:"Use for: Cursor, Bolt, Lovable, v0, Replit, Claude Code — any AI-first coding tool",
+   body:`<p>The loop: describe what you want in plain English → the tool generates code → you preview → you describe what to change → repeat. What separates a working app from an unmaintainable mess is one discipline: <strong>write a one-page PRD before your first prompt.</strong></p>
+   <p>A minimal PRD answers three questions before any code exists: what problem are you solving, who is it for, and what does "done" look like. Thirty minutes here routinely saves hours of "fix one bug, introduce two more" later.</p>
+   <div class="tech-stack-row">
+    <div class="stack-pill"><b>Frontend/UI:</b> what the user sees and clicks</div>
+    <div class="stack-pill"><b>Backend:</b> the logic behind the scenes</div>
+    <div class="stack-pill"><b>Database:</b> where data lives (e.g. Supabase)</div>
+    <div class="stack-pill"><b>API:</b> the messenger connecting frontend to backend</div>
+    <div class="stack-pill"><b>Auth:</b> the front door — who's allowed in</div>
+   </div>
+   <p><strong>Non-negotiables regardless of tool:</strong> commit every working state to version control before your next experiment; never let API keys get hardcoded into committed files; don't ship anything you can't explain in one sentence per function.</p>`}
+]}
+];
+const tabWrap=document.getElementById('techTabs'); const panelWrap=document.getElementById('techPanels');
+tabWrap.setAttribute('role','tablist'); tabWrap.setAttribute('aria-label','Technique category');
+TECH.forEach((sec,i)=>{
+  const tab=document.createElement('button'); tab.className='tech-tab'+(i===0?' active':''); tab.textContent=sec.label;
+  tab.setAttribute('role','tab'); tab.setAttribute('aria-selected',i===0?'true':'false'); tab.id='tab-'+sec.id; tab.setAttribute('aria-controls','panel-'+sec.id);
+  tab.onclick=()=>{
+    document.querySelectorAll('.tech-tab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false');});
+    tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+    document.querySelectorAll('.tech-panel').forEach(p=>p.classList.remove('active'));
+    document.getElementById('panel-'+sec.id).classList.add('active');
+  };
+  tabWrap.appendChild(tab);
+  const panel=document.createElement('div'); panel.className='tech-panel'+(i===0?' active':''); panel.id='panel-'+sec.id; panel.setAttribute('role','tabpanel'); panel.setAttribute('aria-labelledby','tab-'+sec.id);
+  sec.cards.forEach(c=>{
+    const card=document.createElement('div'); card.className='tech-card';
+    card.innerHTML=`<div class="why">${c.why}</div><h3>${c.h}</h3>${c.body}`;
+    panel.appendChild(card);
+  });
+  panelWrap.appendChild(panel);
+});
+</script>
+</body>
+</html>

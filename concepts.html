@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>How AI Actually Works, in Plain English — Zero → Frontier</title>
+<meta name="description" content="Neural networks, training, attention, tokens, and multimodality explained in plain English — plus a visual map of how AI, machine learning, deep learning, and generative AI actually relate.">
+<meta property="og:title" content="How AI Actually Works, in Plain English — Zero → Frontier">
+<meta property="og:description" content="Neural networks, training, attention, tokens, and multimodality explained in plain English — plus a visual map of how AI, machine learning, deep learning, and generative AI actually relate.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How AI Actually Works, in Plain English — Zero → Frontier">
+<meta name="twitter:description" content="Neural networks, training, attention, tokens, and multimodality explained in plain English — plus a visual map of how AI, machine learning, deep learning, and generative AI actually relate.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.tree-wrap{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:20px;overflow-x:auto;margin-top:24px;}
+.tree-note{margin-top:22px;border-left:3px solid var(--c4);background:rgba(251,191,36,0.06);border-radius:0 12px 12px 0;padding:16px 20px;color:var(--sub);font-size:0.9rem;line-height:1.6;}
+.tree-note b{color:var(--c4);}
+.node-label{font-size:13px;font-weight:700;fill:var(--ink);}
+.node-sub{font-size:10.5px;fill:var(--sub);}
+.gloss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:24px;}
+.gcard{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:20px 22px;cursor:pointer;transition:.25s;}
+.gcard:hover{border-color:rgba(167,139,250,0.4);background:rgba(255,255,255,0.05);}
+.gcard .gi{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;margin-bottom:12px;background:rgba(167,139,250,0.15);}
+.gcard h3{margin:0 0 6px;font-size:1.02rem;}
+.gcard p{margin:0;color:var(--sub);font-size:0.86rem;line-height:1.55;max-height:0;overflow:hidden;transition:max-height .3s ease;}
+.gcard.open p{max-height:400px;margin-top:8px;}
+.gcard .tag{font-size:0.68rem;color:var(--sub2);text-transform:uppercase;letter-spacing:0.06em;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html">History</a>
+      <a href="concepts.html" class="current">Concepts</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="tools.html">Tools</a>
+      <a href="playbooks.html">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><circle cx="25" cy="40" r="6" fill="var(--c1)"/><circle cx="25" cy="75" r="6" fill="var(--c1)"/><circle cx="25" cy="110" r="6" fill="var(--c1)"/><circle cx="75" cy="25" r="6" fill="var(--c2)"/><circle cx="75" cy="60" r="6" fill="var(--c2)"/><circle cx="75" cy="95" r="6" fill="var(--c2)"/><circle cx="75" cy="130" r="6" fill="var(--c2)"/><circle cx="125" cy="55" r="6" fill="var(--c5)"/><circle cx="125" cy="95" r="6" fill="var(--c5)"/><g stroke="var(--line)" stroke-width="1.5"><path d="M25 40 L75 25 M25 40 L75 60 M25 75 L75 25 M25 75 L75 60 M25 75 L75 95 M25 110 L75 95 M25 110 L75 130"/><path d="M75 25 L125 55 M75 60 L125 55 M75 60 L125 95 M75 95 L125 55 M75 95 L125 95 M75 130 L125 95"/></g></svg></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Concepts</div>
+    <div class="kicker">Page 03 of 11</div>
+    <h1>How AI actually works, in plain English</h1>
+    <p class="lede">Nine mechanical concepts that unlock everything else, plus a visual map of how "AI," "machine learning," "deep learning," and "generative AI" actually relate to one another — and where that tidy nesting breaks into a tree.</p>
+  </div>
+</section>
+
+<section aria-labelledby="tree-h">
+  <div class="wrap">
+    <div class="kicker">The nesting map</div>
+    <h2 id="tree-h">Where the ladder becomes a tree</h2>
+    <p class="lede">AI → Machine Learning → Deep Learning → Generative AI nest cleanly inside one another. After that, the picture branches — twice.</p>
+    <div class="tree-wrap reveal">
+      <svg id="treeSvg" viewBox="0 0 1080 640" style="width:100%;height:auto;" role="img" aria-describedby="tree-desc"></svg>
+    </div>
+    <p id="tree-desc" class="sr-only">A diagram showing Artificial Intelligence containing Machine Learning, which contains Deep Learning. Deep Learning then branches into five parallel sibling fields: Computer Vision, Natural Language Processing, Reinforcement Learning, Speech Recognition, and Generative AI. Generative AI itself branches by output type into LLMs (the text branch), Diffusion models (image, video, and audio), and GANs or VAEs. Agentic AI is shown as a dashed wrapper drawn around an LLM, adding tools, planning, and memory, rather than as another nested ring.</p>
+    <div class="tree-note reveal"><b>Agentic AI is a wrapper, not a nested ring.</b> It sits on top of an LLM — adding tool use, multi-step planning, and memory — instead of being one more circle drawn inside "LLM." Generative AI is reactive (one prompt → one output); agentic AI plans and executes multi-step tasks with reduced human oversight.</div>
+  </div>
+</section>
+
+<section aria-labelledby="gloss-h">
+  <div class="wrap">
+    <div class="kicker">The mechanics</div>
+    <h2 id="gloss-h">Nine concepts, defined plainly</h2>
+    <p class="lede">Click a card to expand it. Each definition ends with a concrete example, not just an abstract description.</p>
+    <div class="gloss-grid" id="glossGrid"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Next: Techniques</div>
+        <h3>Now that you know how it works — how do you actually use it well?</h3>
+        <p>Prompt structure, image and video prompting, agent design, and the vibe-coding workflow — with real, worked examples.</p>
+      </div>
+      <a class="btn btn-primary" href="techniques.html">Continue to Techniques →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional advice of any kind. Figures move quickly — verify against the linked primary sources.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>
+const glossary = [
+["🧠","Neural network","Core mechanic","Layers of simple units (\"neurons\") connected by weighted numbers. Data goes in, each neuron does a small weighted calculation, a prediction comes out — repeated multiplication and addition arranged so the network can approximate very complex patterns given enough layers and the right weights."],
+["🎯","Training","Core mechanic","Finding good values for all the network's weights. Show it an example, it guesses, you measure the error (\"loss\"), backpropagation calculates how each weight contributed, gradient descent nudges every weight to reduce the error — repeat millions of times."],
+["🔢","Parameter","Core mechanic","One learned weight (or bias) inside the network — a single adjustable dial. Modern models have billions of them; more dials generally means more capacity to represent complex relationships, which is why parameter count is used as a rough, imperfect proxy for capability."],
+["⚡","Transformer architecture","Architecture","Older models (RNNs/LSTMs) read text one word at a time, trying to remember everything so far. The 2017 Transformer looks at all words at once using self-attention — every word can consult every other word in parallel, which trains far faster and holds long-range context better."],
+["👁️","Attention mechanism","Architecture","Lets a model decide, for each word, how much to \"pay attention\" to every other word in the input. In \"the animal didn't cross the street because it was too tired,\" attention helps the model learn that \"it\" means \"the animal,\" not \"the street.\""],
+["🔤","Token / embedding","Core mechanic","A token is a chunk of text the model reads at once — often a word or word-piece. An embedding is how a token is represented internally: not as text, but as a long list of numbers positioned so tokens with similar meaning end up near each other in that space."],
+["🛠️","Fine-tuning vs. prompting vs. RAG","Working with models","Three ways to shape a model's behavior, in increasing cost: prompting (better instructions, no retraining), RAG (fetch relevant documents at question time, without touching the weights), fine-tuning (retrain the weights themselves — most powerful, most expensive)."],
+["🎨","Multimodality","Architecture","A model that takes in and/or produces more than one kind of data — text, images, audio, video — through one unified architecture. Images are chopped into patches and audio into clips, converted into the same kind of numerical embeddings used for text."],
+["🤖","\"Agent\" vs. chatbot","Working with models","A chatbot answers one message at a time with no ability to act in the world. An agent is the same underlying model wrapped with tool use (search, code, APIs), multi-step planning, and the ability to decide what to do next on its own."]
+];
+const gg=document.getElementById('glossGrid');
+glossary.forEach(([icon,term,tag,def])=>{
+  const c=document.createElement('div'); c.className='gcard'; c.setAttribute('role','button'); c.setAttribute('tabindex','0');
+  c.setAttribute('aria-expanded','false'); c.setAttribute('aria-label',term+': tap or press Enter to expand definition');
+  c.innerHTML=`<div class="gi" aria-hidden="true">${icon}</div><div class="tag">${tag}</div><h3>${term}</h3><p>${def}</p>`;
+  function toggle(){ const o=c.classList.toggle('open'); c.setAttribute('aria-expanded',o?'true':'false'); }
+  c.addEventListener('click',toggle);
+  c.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+  gg.appendChild(c);
+});
+
+// SVG tree
+const svg=document.getElementById('treeSvg'); const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);return e;}
+function line(x1,y1,x2,y2,color){svg.appendChild(el('path',{d:`M${x1},${y1} C${x1},${(y1+y2)/2} ${x2},${(y1+y2)/2} ${x2},${y2}`,stroke:color||'rgba(255,255,255,0.18)','stroke-width':1.6,fill:'none'}));}
+function box(x,y,w,h,label,sub,fill,stroke){
+  const g=el('g',{});
+  g.appendChild(el('rect',{x,y,width:w,height:h,rx:14,fill,stroke,'stroke-width':1.2}));
+  const t1=el('text',{x:x+w/2,y:y+h/2-(sub?6:0),'text-anchor':'middle',class:'node-label'}); t1.textContent=label; g.appendChild(t1);
+  if(sub){const t2=el('text',{x:x+w/2,y:y+h/2+14,'text-anchor':'middle',class:'node-sub'});t2.textContent=sub;g.appendChild(t2);}
+  svg.appendChild(g); return {cx:x+w/2, cy:y+h, top:y};
+}
+const ai=box(340,20,400,60,"Artificial Intelligence","any technique mimicking intelligent behavior","rgba(110,231,255,0.10)","rgba(110,231,255,0.4)");
+const ml=box(370,110,340,58,"Machine Learning","learns patterns from data","rgba(110,231,255,0.15)","rgba(110,231,255,0.5)");
+const dl=box(400,198,280,58,"Deep Learning","many-layered neural networks","rgba(167,139,250,0.18)","rgba(167,139,250,0.55)");
+line(ai.cx,ai.cy,ml.cx,ml.top,'rgba(110,231,255,0.4)'); line(ml.cx,ml.cy,dl.cx,dl.top,'rgba(167,139,250,0.4)');
+const sibY=300,sibW=155,sibH=52; const sibX=[70,240,410,580,750];
+const sibLabels=[["Computer","Vision"],["NLP",""],["Reinforcement","Learning"],["Speech","Recognition"],["Generative","AI"]];
+const sibNodes=[];
+sibLabels.forEach((lab,i)=>{ const isGen=i===4;
+  const n=box(sibX[i],sibY,sibW,sibH,lab[0]+(lab[1]?(" "+lab[1]):""),null, isGen?'rgba(52,211,153,0.22)':'rgba(255,255,255,0.04)', isGen?'rgba(52,211,153,0.6)':'rgba(255,255,255,0.15)');
+  sibNodes.push(n); line(dl.cx,dl.cy,sibX[i]+sibW/2,sibY,'rgba(255,255,255,0.15)');
+});
+const genNode=sibNodes[4];
+const modY=400,modW=190,modH=52; const modX=[500,720,930];
+const modLabels=["LLMs — text branch","Diffusion models — image/video/audio","GANs / VAEs"];
+const modNodes=[];
+modLabels.forEach((lab,i)=>{ const isLLM=i===0;
+  const n=box(modX[i],modY,modW,modH,lab,null, isLLM?'rgba(110,231,255,0.2)':'rgba(255,255,255,0.04)', isLLM?'rgba(110,231,255,0.6)':'rgba(255,255,255,0.15)');
+  modNodes.push(n); line(genNode.cx,genNode.cy,modX[i]+modW/2,modY,'rgba(52,211,153,0.35)');
+});
+const llmNode=modNodes[0];
+const agX=500,agY=500,agW=290,agH=90;
+svg.appendChild(el('rect',{x:agX-10,y:agY-10,width:agW+20,height:agH+20,rx:22,fill:'none',stroke:'rgba(251,191,36,0.55)','stroke-width':1.4,'stroke-dasharray':'5,5'}));
+box(agX+20,agY+30,120,44,"LLM","core model",'rgba(110,231,255,0.18)','rgba(110,231,255,0.5)');
+const agLabel=el('text',{x:agX+agW-14,y:agY+18,'text-anchor':'end',class:'node-sub',fill:'#fbbf24','font-weight':'700'}); agLabel.textContent="+ tools · planning · memory"; svg.appendChild(agLabel);
+const agTitle=el('text',{x:agX+14,y:agY+18,class:'node-label',fill:'#fbbf24','font-size':'12'}); agTitle.textContent="Agentic AI (wrapper, not a ring)"; svg.appendChild(agTitle);
+line(llmNode.cx,llmNode.cy,agX+80,agY+30,'rgba(251,191,36,0.5)');
+const b1=el('text',{x:400,y:290,'text-anchor':'middle',fill:'rgba(255,255,255,0.35)','font-size':'10','font-style':'italic'}); b1.textContent="▾ parallel sibling domains, not further nesting"; svg.appendChild(b1);
+const b2=el('text',{x:715,y:390,'text-anchor':'middle',fill:'rgba(255,255,255,0.35)','font-size':'10','font-style':'italic'}); b2.textContent="▾ branches by output modality"; svg.appendChild(b2);
+</script>
+</body>
+</html>

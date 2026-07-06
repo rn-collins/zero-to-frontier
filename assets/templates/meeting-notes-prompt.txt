@@ -1,0 +1,35 @@
+MEETING NOTES & FOLLOW-UP — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Paste your raw meeting transcript or rough notes
+where indicated. Works in any chat AI (Claude, ChatGPT, Gemini) or
+a dedicated meeting-notes tool — see the Tools > Meetings & Knowledge
+page for a comparison of those.
+
+---
+
+Here are my raw notes/transcript from today's meeting:
+[paste your unedited notes or transcript here]
+
+Turn this into three sections:
+
+1. DECISIONS MADE — only things the group actually agreed on, not
+   things that were merely discussed.
+
+2. ACTION ITEMS — each with an owner and a rough deadline if one was
+   mentioned. If an item's owner is unclear from the notes, list it
+   under "UNASSIGNED" instead of guessing who's responsible.
+
+3. OPEN QUESTIONS — anything raised but not resolved, so it doesn't
+   silently disappear.
+
+Then draft a short follow-up message (3-5 sentences) I could send to
+the group summarizing the above, in a [formal / casual — pick one]
+tone.
+
+Flag anything in my notes that seems ambiguous or contradictory
+rather than silently resolving it one way.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

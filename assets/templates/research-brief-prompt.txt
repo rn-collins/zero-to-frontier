@@ -1,0 +1,32 @@
+RESEARCH BRIEF FOR A CLIENT — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: After you've done real research (see the Research
+Workflow playbook), paste your verified notes and sources in here —
+this turns your research into a polished, client-ready brief, it
+does not do the research or verification for you.
+
+---
+
+I've done research on [topic] for a client. Here are my verified
+notes and sources:
+[paste your own research notes, with sources — do not skip
+verification and paste an unverified AI summary here]
+
+CLIENT CONTEXT: [who they are, why they need this]
+FORMAT NEEDED: [e.g. "one-page brief," "detailed report with sections"]
+
+Turn my notes into a client-ready research brief:
+1. Executive summary — 3-4 sentences, the key takeaway up front.
+2. Key findings, organized by theme, each citing which source it
+   came from (use my sources, don't introduce new claims).
+3. What this means for the client specifically, given their context.
+4. Open questions or areas needing further research, stated honestly.
+
+Do not add any claim, statistic, or source that I didn't provide —
+if you think something is missing, flag it as a gap for me to
+research, not something to fill in yourself.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

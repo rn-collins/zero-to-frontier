@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>Today's AI Frontier &amp; the AGI Debate — Zero → Frontier</title>
+<meta name="description" content="Where AI stands in mid-2026: the closely matched multi-lab race, the real numbers from Stanford HAI's 2026 AI Index, and the genuinely unresolved debate over artificial general intelligence between named researchers on both sides.">
+<meta property="og:title" content="Today's AI Frontier &amp; the AGI Debate — Zero → Frontier">
+<meta property="og:description" content="Where AI stands in mid-2026: the closely matched multi-lab race, the real numbers from Stanford HAI's 2026 AI Index, and the genuinely unresolved debate over artificial general intelligence between named researchers on both sides.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Today's AI Frontier &amp; the AGI Debate — Zero → Frontier">
+<meta name="twitter:description" content="Where AI stands in mid-2026: the closely matched multi-lab race, the real numbers from Stanford HAI's 2026 AI Index, and the genuinely unresolved debate over artificial general intelligence between named researchers on both sides.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.vs{display:flex;align-items:center;justify-content:center;gap:20px;margin:32px 0;}
+.vs .line{flex:1;height:1px;background:var(--line);}
+.vs .badge{font-weight:800;font-size:0.85rem;color:var(--sub2);letter-spacing:0.1em;}
+.debate{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media(max-width:760px){.debate{grid-template-columns:1fr;}}
+.side{border-radius:20px;padding:26px 28px;border:1px solid var(--line);}
+.side.opt{background:linear-gradient(160deg,rgba(52,211,153,0.09),transparent 60%);}
+.side.skep{background:linear-gradient(160deg,rgba(251,113,133,0.09),transparent 60%);}
+.side h3{margin:0 0 4px;}
+.side .who{font-size:0.78rem;color:var(--sub2);margin-bottom:16px;}
+.side p{color:var(--sub);font-size:0.9rem;line-height:1.65;margin:0 0 14px;}
+.side p strong{color:var(--ink);}
+.crux{margin-top:20px;border:1px solid var(--line);border-radius:16px;padding:22px 26px;background:var(--panel);}
+.crux b{color:var(--c1);}
+.frontier-body{color:var(--sub);font-size:0.98rem;line-height:1.75;max-width:760px;}
+.frontier-body strong{color:var(--ink);}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html">History</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="tools.html">Tools</a>
+      <a href="playbooks.html">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html" class="current">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><circle cx="75" cy="75" r="18" fill="var(--c5)" opacity="0.8"/><ellipse cx="75" cy="75" rx="60" ry="22" stroke="var(--c1)" stroke-width="1.6" transform="rotate(-15 75 75)"/><ellipse cx="75" cy="75" rx="60" ry="22" stroke="var(--c2)" stroke-width="1.6" transform="rotate(25 75 75)"/><circle cx="128" cy="60" r="4" fill="var(--c1)"/><circle cx="22" cy="95" r="4" fill="var(--c2)"/></svg></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Frontier &amp; AGI</div>
+    <div class="kicker">Page 09 of 11</div>
+    <h1>Today's frontier — and the question nobody's settled</h1>
+    <p class="lede">Where the technology actually stands in mid-2026, in real numbers from a named source — followed by the honest, still-open debate about artificial general intelligence.</p>
+  </div>
+</section>
+
+<section aria-labelledby="stats-h" class="tinted">
+  <div class="wrap">
+    <div class="kicker">The state of play</div>
+    <h2 id="stats-h">Mid-2026, by the numbers</h2>
+    <div class="stat-grid" id="statGrid"></div>
+    <div class="frontier-body reveal">
+      <p>No single "best" model — OpenAI, Anthropic, Google, and Chinese labs including DeepSeek are locked in a closely matched race with frequent leapfrogging. Reasoning models (chain-of-thought at inference time, starting with OpenAI's o1) proved that scaling <strong>test-time compute</strong> — not just parameters — is its own axis of progress. DeepSeek-R1 (Jan 2025) then upended assumptions about cost, matching top reasoning performance far more cheaply and triggering a roughly 17% single-day Nvidia stock drop.</p>
+      <p><strong>Agentic AI is the dominant narrative</strong> — models that browse, code, and operate computers autonomously — but real-world deployments still show roughly a 37% gap between lab benchmark scores and real-world performance. Generalization beyond curated tasks remains the honest, current weak point.</p>
+      <p style="font-size:0.78rem;color:var(--sub2);">Source: <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener noreferrer">Stanford HAI 2026 AI Index Report</a> (9th edition, Apr 13 2026).</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="agi-h">
+  <div class="wrap">
+    <div class="kicker">The open question</div>
+    <h2 id="agi-h">The AGI debate</h2>
+    <p class="lede">Presented as unresolved, because it is — among serious, credentialed researchers, not just online hype.</p>
+    <div class="vs reveal"><div class="line"></div><div class="badge">OPTIMISTS &nbsp;vs&nbsp; SKEPTICS</div><div class="line"></div></div>
+    <div class="debate reveal">
+      <div class="side opt">
+        <h3>🟢 "It's close"</h3>
+        <div class="who">Dario Amodei · Sam Altman</div>
+        <p><strong>Dario Amodei</strong> (Anthropic CEO) forecasts AI "broadly better than all humans at almost all things" as soon as 2026–2027 — including software-engineering displacement within a year and "Nobel-level" scientific contributions within two.</p>
+        <p><strong>Sam Altman</strong> (OpenAI) has suggested AGI will "probably" arrive within the current US presidential term.</p>
+      </div>
+      <div class="side skep">
+        <h3>🔴 "Not with this architecture"</h3>
+        <div class="who">Yann LeCun · Gary Marcus</div>
+        <p><strong>Yann LeCun</strong> argues current LLM architectures can't reach human-like general intelligence — pointing to the lack of reliable home robots or level-5 self-driving despite LLMs passing bar exams. He frames physical-world reasoning as the real bottleneck.</p>
+        <p><strong>Gary Marcus</strong> has shifted from "decades away" to "roughly a decade away" — while still betting against near-term AGI milestones.</p>
+      </div>
+    </div>
+    <div class="crux reveal">The disagreement is really about three things: <b>(a)</b> what "AGI" even means, <b>(b)</b> whether benchmark gains reflect real generalization or saturation of static tests, and <b>(c)</b> whether scaling current transformer architectures is sufficient at all. A January 2026 Davos panel captured this clash directly among Amodei, Demis Hassabis, and LeCun — <a href="https://fortune.com/2026/01/23/deepmind-demis-hassabis-anthropic-dario-amodei-yann-lecun-ai-davos/" target="_blank" rel="noopener noreferrer">read the Fortune coverage</a>.</div>
+    <p style="font-size:0.78rem;color:var(--sub2);margin-top:16px;">Further reading: <a href="https://garymarcus.substack.com/p/six-or-seven-predictions-for-ai-2026" target="_blank" rel="noopener noreferrer">Gary Marcus's 2026 predictions</a> · <a href="https://80000hours.substack.com/p/what-the-hell-happened-with-agi-timelines" target="_blank" rel="noopener noreferrer">80,000 Hours on AGI timelines</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Next: Resource Library</div>
+        <h3>Want to go deeper on any of this?</h3>
+        <p>237 verified free resources — official docs, papers, and tutorials — searchable by topic.</p>
+      </div>
+      <a class="btn btn-primary" href="library.html">Browse the Library →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional, financial, or investment advice of any kind. These are snapshot figures from named sources and will age — verify against the linked primary sources before relying on any specific number.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>
+const stats=[["$581.7B","Global corporate AI investment in 2025 — up 130% year over year"],["53%","Of the world's population using generative AI within three years"],["2.7%","The US–China top-model capability gap as of March 2026"],["37%","The gap between agent benchmark scores and real-world performance"]];
+const sg=document.getElementById('statGrid');
+stats.forEach(([n,l])=>{ const s=document.createElement('div'); s.className='stat reveal'; s.innerHTML=`<div class="num">${n}</div><div class="lbl">${l}</div>`; sg.appendChild(s); });
+</script>
+</body>
+</html>

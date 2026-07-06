@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>10 AI Playbooks: Research, Content, Knowledge Base, Meetings, Prompts, Tool Selection, Intake, Governance, Email, SOPs — Zero → Frontier</title>
+<meta name="description" content="Ten full AI implementation playbooks — manual, semi-automated, and fully-implemented versions of each workflow, with step-by-step build instructions, risks, and KPIs.">
+<meta property="og:title" content="10 AI Playbooks: Research, Content, Knowledge Base, Meetings, Prompts, Tool Selection, Intake, Governance, Email, SOPs — Zero → Frontier">
+<meta property="og:description" content="Ten full AI implementation playbooks — manual, semi-automated, and fully-implemented versions of each workflow, with step-by-step build instructions, risks, and KPIs.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="10 AI Playbooks: Research, Content, Knowledge Base, Meetings, Prompts, Tool Selection, Intake, Governance, Email, SOPs — Zero → Frontier">
+<meta name="twitter:description" content="Ten full AI implementation playbooks — manual, semi-automated, and fully-implemented versions of each workflow, with step-by-step build instructions, risks, and KPIs.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.pb-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 28px;}
+.pb-tab{background:var(--panel);border:1px solid var(--line);color:var(--sub);padding:9px 16px;border-radius:999px;font-size:0.8rem;cursor:pointer;transition:.2s;}
+.pb-tab:hover{color:var(--ink);}
+.pb-tab.active{background:var(--grad);color:#04121a;border-color:transparent;font-weight:700;}
+.pb-panel{display:none;}
+.pb-panel.active{display:block;}
+.pb-card{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:30px 32px;}
+.pb-card h3{margin:0 0 4px;font-size:1.4rem;}
+.pb-sub{color:var(--sub2);font-size:0.85rem;margin-bottom:22px;}
+.pb-row{margin-bottom:20px;}
+.pb-row .lbl{font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:var(--c1);margin-bottom:6px;}
+.pb-row p{margin:0;color:var(--sub);font-size:0.9rem;line-height:1.7;}
+.pb-row p strong{color:var(--ink);}
+.maturity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:8px 0 4px;}
+@media(max-width:800px){.maturity-grid{grid-template-columns:1fr;}}
+.maturity-card{border:1px solid var(--line);background:var(--panel-solid);border-radius:14px;padding:16px 18px;}
+.maturity-card .m-tag{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--sub2);margin-bottom:6px;}
+.maturity-card p{margin:0;color:var(--sub);font-size:0.84rem;line-height:1.55;}
+.mini-list{margin:8px 0;padding-left:20px;color:var(--sub);font-size:0.88rem;line-height:1.7;}
+.mini-list li strong{color:var(--ink);}
+.kpi-row{display:flex;flex-wrap:wrap;gap:8px;}
+.kpi-pill{font-size:0.78rem;color:var(--c3);background:rgba(52,211,153,0.08);border:1px solid rgba(52,211,153,0.25);padding:6px 13px;border-radius:999px;}
+.risk-box{border-left:3px solid var(--c5);background:rgba(251,113,133,0.06);border-radius:0 12px 12px 0;padding:14px 18px;color:var(--sub);font-size:0.86rem;line-height:1.6;}
+.risk-box b{color:var(--c5);}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;}
+.rel-pill{font-size:0.78rem;color:var(--c1);background:rgba(110,231,255,0.08);border:1px solid rgba(110,231,255,0.25);padding:6px 13px;border-radius:999px;text-decoration:none;}
+.rel-pill:hover{background:rgba(110,231,255,0.18);}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html">History</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="tools.html">Tools</a>
+      <a href="playbooks.html" class="current">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><rect x="55" y="20" width="40" height="24" rx="6" stroke="var(--c1)" stroke-width="2"/><rect x="15" y="90" width="40" height="24" rx="6" stroke="var(--c2)" stroke-width="2"/><rect x="95" y="90" width="40" height="24" rx="6" stroke="var(--c5)" stroke-width="2"/><path d="M75 44 V65 M75 65 L35 90 M75 65 L115 90" stroke="var(--sub2)" stroke-width="2"/></svg></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Playbooks</div>
+    <div class="kicker">Page 07 of 11</div>
+    <h1>Ten full playbooks — from manual to fully implemented</h1>
+    <p class="lede">Use Cases show you one task at a time. Playbooks show you the whole workflow — the manual version, the semi-automated version, and the fully-implemented version, with build steps, risks, and how you'd actually measure whether it's working.</p>
+    <div class="pb-tabs" id="pbTabs"></div>
+    <div id="pbPanels"></div>
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Next: Templates</div>
+        <h3>Ready to build one of these yourself?</h3>
+        <p>Eighteen ready-to-paste prompt templates that do the drafting for you.</p>
+      </div>
+      <a class="btn btn-primary" href="templates.html">Continue to Templates →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional advice of any kind. Adapt every playbook to your own risk tolerance and confidentiality requirements.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>
+const PB = [
+{id:"research",label:"Research Workflow",
+ problem:"Most people either under-research (skim two search results and call it done) or over-research (read twenty tabs and never synthesize). Neither produces a usable answer on a deadline.",
+ why:"Research quality directly affects every downstream decision — a proposal, a strategy call, a piece of content. A structured workflow turns \"I read some stuff\" into a defensible, sourced answer in a bounded amount of time.",
+ who:"Anyone who needs to answer a non-trivial question — consultants, founders, students, analysts, marketers doing competitive research.",
+ accomplishes:"A sourced, structured answer to a specific research question, with claims traceable back to real sources — not a vague summary.",
+ tools:"Perplexity or Consensus for grounded web/academic search; NotebookLM once you've gathered your own source set; see the <a href=\"tools-research.html\">Research tools page</a> for full comparisons.",
+ manual:"Search manually, open multiple tabs, read each source fully, take your own notes, and manually synthesize a written answer. Thorough, but slow — often 2-4+ hours for a non-trivial question.",
+ semi:"Use Perplexity or Consensus for the initial source-gathering and first-pass synthesis, then manually verify the highest-stakes claims against the original sources before using the answer. Cuts research time significantly while keeping a human check on accuracy.",
+ full:"Build a standing NotebookLM notebook per ongoing research area (a client, a market, a topic you track often), continuously add new sources as they appear, and query it directly instead of re-researching from scratch each time a related question comes up.",
+ steps:"<ol class=\"mini-list\"><li>Define the specific question — not \"tell me about X\" but \"what does X mean for Y, specifically.\"</li><li>Run it through a grounded search tool (Perplexity/Consensus) and note which sources it actually cites.</li><li>Open and skim the 2-3 highest-stakes cited sources directly — don't trust the synthesis alone for anything you'll act on.</li><li>Write the final answer yourself, in your own words, citing the sources you personally verified.</li><li>If this is a recurring research area, save the source set into a NotebookLM notebook for next time.</li></ol>",
+ promptLink:["Use Case: Research synthesis","use-cases.html"],
+ risks:"The single biggest risk is trusting a synthesized answer without opening the underlying sources — a grounded search tool's citation doesn't guarantee its summary of that citation is accurate. Always spot-check the claims that matter most before you act on them.",
+ kpis:["Time from question to sourced answer","% of claims independently verified before use","Number of research areas with a standing notebook vs. one-off search"]},
+
+{id:"content",label:"Content Repurposing",
+ problem:"Most people create one piece of content (a post, a talk, an article) and let it die after one use, even though it could become five more pieces with a fraction of the original effort.",
+ why:"Content creation is usually the bottleneck, not distribution — repurposing multiplies the return on time already spent, rather than requiring new original work for every format.",
+ who:"Anyone publishing content in any format — solo creators, marketers, consultants building a public presence, educators.",
+ accomplishes:"Turns one long-form piece of content into multiple ready-to-publish formats — social posts, an email version, quotes, a short video script — while preserving factual accuracy and original tone.",
+ tools:"Any general chat model (Claude, ChatGPT) — see the <a href=\"tools-writing.html\">Writing tools page</a>; the <a href=\"templates.html\">Content Repurposing Prompt</a> template runs this exact workflow.",
+ manual:"Manually rewrite the same content for each platform by hand — accurate but extremely time-consuming, which is why most people simply don't do it consistently.",
+ semi:"Use the Content Repurposing Prompt template to generate a first draft in each new format, then personally edit each one for platform-specific voice and add anything the AI couldn't know (a personal anecdote, a timely reference).",
+ full:"Build a standing process: every piece of long-form content automatically gets run through the repurposing prompt the same day it's published, with a fixed 15-minute edit pass before anything goes out — repurposing becomes a routine step, not an afterthought.",
+ steps:"<ol class=\"mini-list\"><li>Publish or finish your long-form piece first — repurposing needs a finished source, not a rough draft.</li><li>Run the Content Repurposing Prompt with the full piece pasted in.</li><li>Edit every generated format for voice — don't publish raw AI output as-is.</li><li>Schedule the repurposed pieces across a few days rather than dumping them all at once.</li><li>Track which repurposed format actually drove engagement, and weight future effort toward that format.</li></ol>",
+ promptLink:["Template: Content Repurposing Prompt","templates.html"],
+ risks:"The main risk is drift — a repurposed post subtly changing a number, a claim, or a nuance from the original. Always diff the repurposed content's factual claims against the source before publishing.",
+ kpis:["Number of formats produced per original piece","Time from publish to full repurposing","Engagement on repurposed vs. original content"]},
+
+{id:"knowledge",label:"Internal Knowledge Base",
+ problem:"Knowledge lives in scattered docs, chat threads, and people's heads — when someone leaves or a question comes up, there's no single place to find the answer.",
+ why:"A working knowledge base turns tribal knowledge into something searchable and durable, and AI-assisted Q&A over that knowledge base removes the bottleneck of \"go ask the one person who knows.\"",
+ who:"Small teams, growing businesses, or solo operators with a lot of accumulated process knowledge that currently exists only informally.",
+ accomplishes:"A queryable internal knowledge base that gives cited, source-grounded answers instead of forcing someone to search through old documents or Slack threads manually.",
+ tools:"Google NotebookLM for a source-grounded Q&A layer over your own documents; Notion AI's Enterprise Search/Connectors if you're already a Notion shop — see the <a href=\"tools-meetings.html\">Meetings &amp; Knowledge tools page</a>.",
+ manual:"Keep documents in folders and rely on people remembering where things are, or searching file names manually. Works at small scale, breaks down as the team or document count grows.",
+ semi:"Upload your key process documents, SOPs, and decision records into a NotebookLM notebook, and manually add new documents as they're created. Anyone with access can query it directly instead of asking around.",
+ full:"Connect a tool like Notion AI's Enterprise Search across your actual working tools (Slack, Drive, docs) so knowledge is queryable at the point where people already work, with a defined owner responsible for keeping the source set current.",
+ steps:"<ol class=\"mini-list\"><li>Identify your highest-value, most-repeated questions — the ones people ask a colleague instead of looking up.</li><li>Gather the source documents that actually answer those questions (SOPs, past decisions, key emails).</li><li>Load them into a source-grounded tool like NotebookLM, not a general chat tool with no fixed source set.</li><li>Assign someone to own keeping it current — a knowledge base that goes stale is worse than no knowledge base, since people stop trusting it.</li><li>Test it by asking it your top 5 recurring questions and checking the citations, not just the answer.</li></ol>",
+ promptLink:["Tools: Meetings &amp; Knowledge","tools-meetings.html"],
+ risks:"A knowledge base with an unclear owner decays fast — stale information that looks authoritative is more dangerous than an obvious gap. Also verify who can access it if it contains anything confidential.",
+ kpis:["Number of \"go ask someone\" questions redirected to self-serve","How current the source set is (days since last update)","User trust — do people actually check it before asking a person?"]},
+
+{id:"meetings",label:"Meeting &amp; Follow-up Workflow",
+ problem:"Meetings generate decisions and action items that routinely evaporate the moment everyone closes their laptop, because writing them up properly takes time nobody has right after a call.",
+ why:"A consistent meeting-to-follow-up pipeline is one of the highest-leverage, lowest-risk places to apply AI, since the stakes of a slightly-imperfect summary are low and the time saved compounds across every recurring meeting.",
+ who:"Anyone in regular meetings with real follow-up requirements — client calls, team standups, planning sessions.",
+ accomplishes:"A repeatable pipeline from raw meeting audio/notes to a reviewed action-item list and a sent follow-up, with no meeting's decisions silently lost.",
+ tools:"A dedicated notetaker (Otter, Fireflies, Fathom, or Granola if you want no bot in the call) plus any chat model for the follow-up draft — see the <a href=\"tools-meetings.html\">Meetings &amp; Knowledge tools page</a> for a full comparison, and the <a href=\"templates.html\">Meeting Notes Prompt</a> template.",
+ manual:"Take your own notes during the meeting and write up action items afterward by memory and notes. Reliable but entirely dependent on you having time immediately after the call, which often doesn't happen.",
+ semi:"Use a notetaker tool to capture the transcript automatically, then run the Meeting Notes & Follow-up Prompt template on the transcript to generate the structured summary and a draft follow-up — you review and send.",
+ full:"Standardize this across every recurring meeting type on your calendar: automatic transcript capture, automatic summary generation, and a fixed rule that no meeting ends without an owner assigned to every action item before the follow-up goes out.",
+ steps:"<ol class=\"mini-list\"><li>Pick a notetaker tool and connect it to your calendar (see the Tools page for tradeoffs — bot-based vs. Granola's bot-free approach).</li><li>After each meeting, run the transcript through the Meeting Notes Prompt template.</li><li>Review the generated action items — confirm every owner and deadline against your own memory of the call.</li><li>Send the follow-up the same day, while the meeting is still fresh for everyone.</li><li>Revisit open action items at the start of the next related meeting so nothing silently drops.</li></ol>",
+ promptLink:["Template: Meeting Notes &amp; Follow-Up Prompt","templates.html"],
+ risks:"Notetaker bots can misattribute an action item to the wrong person on an ambiguous transcript — always verify owners and deadlines before sending, and check each tool's data-retention default before recording anything confidential.",
+ kpis:["% of meetings with a same-day follow-up sent","Action items completed vs. silently dropped","Time from meeting end to follow-up sent"]},
+
+{id:"promptlib",label:"Prompt Library for Teams",
+ problem:"Every person on a team reinvents their own prompts from scratch, with wildly inconsistent quality, and good prompts developed by one person never reach anyone else.",
+ why:"A shared prompt library turns individual trial-and-error into a compounding team asset — the best-performing prompt for a given task becomes the default, not a personal secret.",
+ who:"Any team of more than a couple of people using AI tools regularly for similar recurring tasks.",
+ accomplishes:"A shared, versioned collection of proven prompts for your team's most common tasks, so quality doesn't depend on which individual happens to be doing the work.",
+ tools:"A shared doc or Notion page is enough to start; no special tool is required — the discipline matters more than the software.",
+ manual:"Everyone keeps their own personal notes app or scratch document of prompts that worked for them, with no sharing mechanism — knowledge stays siloed by default.",
+ semi:"Create one shared document with your team's top 10-15 recurring-task prompts (many of the <a href=\"templates.html\">Templates</a> on this site are a ready starting set), and make adding a new proven prompt part of the normal workflow when someone finds one that works well.",
+ full:"Treat the prompt library like living documentation: review it quarterly, retire prompts that consistently underperform, and require any AI-assisted deliverable type (proposals, client emails, reports) to start from the library's version rather than an ad hoc one.",
+ steps:"<ol class=\"mini-list\"><li>Audit what prompts your team is already using informally — ask everyone to share their best one for a task they do often.</li><li>Pick the best version of each recurring task's prompt (don't average multiple mediocre ones — pick the strongest single version).</li><li>Store them somewhere everyone actually opens day to day, not a forgotten folder.</li><li>Assign light ownership — someone who updates the library when a better version emerges.</li><li>Review and prune quarterly — a stale, cluttered library gets ignored.</li></ol>",
+ promptLink:["Templates: all 8 prompts","templates.html"],
+ risks:"A prompt library with no owner goes stale and gets ignored within a few months — assign light ownership from the start rather than treating it as a one-time setup task.",
+ kpis:["Number of team members actively using the shared library","Number of prompts added/updated per quarter","Consistency of output quality across different team members doing the same task"]},
+
+{id:"toolselect",label:"Tool Selection",
+ problem:"Teams and individuals accumulate AI tools ad hoc — someone tries something, it sticks around, nobody ever evaluates whether it's still the right choice or whether it's redundant with something else already in use.",
+ why:"Tool sprawl costs money, creates data-handling inconsistency (different tools, different privacy defaults), and adds switching costs for anyone joining the team. A deliberate selection process avoids this without requiring you to freeze on one tool forever.",
+ who:"Anyone about to adopt a new AI tool, or auditing an existing, ad hoc tool stack.",
+ accomplishes:"A deliberate, criteria-based decision about which AI tools to adopt and which to retire, instead of tool choice happening by accident.",
+ tools:"See all five <a href=\"tools.html\">Tools pages</a> for the specific comparisons this playbook draws on, plus the <a href=\"templates.html\">AI Tool Evaluation Prompt</a> template to run the actual evaluation.",
+ manual:"Adopt whatever tool a team member happens to suggest, based on a recommendation or a demo, with no formal evaluation against your actual needs or data-handling requirements.",
+ semi:"Before adopting any new tool, run it through the AI Tool Evaluation Prompt template — fit, data handling, cost structure, reliability, exit plan, human oversight — and require a documented answer to all six before approving it.",
+ full:"Run a lean-stack review twice a year (see the <a href=\"tools.html\">Tools</a> hub's lean-stack section): audit every tool currently in use, retire anything redundant or unused, and re-evaluate your core stack against what's changed in the meantime rather than accumulating tools indefinitely.",
+ steps:"<ol class=\"mini-list\"><li>Before adopting anything new, name the specific recurring task it would solve — not \"it looks useful.\"</li><li>Check whether a tool you already use can do this instead of adding a new one.</li><li>Run the AI Tool Evaluation Prompt template against the candidate tool's actual pricing and privacy pages.</li><li>Set a calendar reminder to re-review your full stack twice a year.</li><li>Retire tools nobody actually uses — sprawl is a cost even when a tool is free.</li></ol>",
+ promptLink:["Template: AI Tool Evaluation Prompt","templates.html"],
+ risks:"The biggest risk in tool selection isn't picking the \"wrong\" tool — it's never revisiting the decision, so a tool chosen for a need that no longer exists keeps accumulating cost and data-handling risk indefinitely.",
+ kpis:["Number of active tools vs. tools actually used weekly","Time since last full-stack review","Number of tools with a documented data-handling evaluation on file"]},
+
+{id:"intake",label:"Client Intake & Onboarding",
+ problem:"New client intake is repetitive but detail-sensitive — the same information gets requested, structured, and turned into onboarding steps every time, and small inconsistencies (a missed detail, a generic-feeling welcome) hurt the first impression.",
+ why:"Onboarding is disproportionately important to client relationships since it's the first real interaction after the sale — getting it right consistently, not just for your favorite clients, protects the relationship from day one.",
+ who:"Any service business, consultancy, agency, or professional practice that takes on new clients regularly.",
+ accomplishes:"A consistent, specific (not generic-feeling) intake and onboarding sequence for every new client, without reinventing the process from scratch each time.",
+ tools:"Any general chat model — see the <a href=\"templates.html\">Client Onboarding &amp; Proposal Prompt</a> template, which runs this exact workflow.",
+ manual:"Write each new client's onboarding emails and intake questions from scratch, or copy-paste from the last client and hand-edit — inconsistent, and details from the wrong client sometimes slip through.",
+ semi:"Use the Client Onboarding Prompt template for every new client: paste in their specific details, generate the intake checklist and welcome sequence, then personally edit for anything template-specific that doesn't fit.",
+ full:"Build a standing onboarding checklist per client type (if you serve more than one kind of client) with the AI-generated sequence as the default starting point, reviewed and refined based on which onboarding steps actually reduce early-stage confusion or churn.",
+ steps:"<ol class=\"mini-list\"><li>Gather the real details of the new client/project before drafting anything — scope, timeline, anything unusual.</li><li>Run the Client Onboarding &amp; Proposal Prompt template.</li><li>Edit for anything generic-sounding — a client should feel like the sequence was written for them specifically.</li><li>Send the welcome email immediately after signing, not days later.</li><li>Track which onboarding steps actually get completed by clients, and cut ones that consistently get ignored.</li></ol>",
+ promptLink:["Template: Client Onboarding &amp; Proposal Prompt","templates.html"],
+ risks:"Never let an AI-drafted onboarding email go out with placeholder text still in it — always do a final read specifically checking that every bracketed detail was actually replaced with real information.",
+ kpis:["Time from signed client to first onboarding email sent","% of intake information received without a follow-up request","Client-reported clarity of the onboarding process"]},
+
+{id:"governance",label:"Governance Starter",
+ problem:"Most small businesses use AI tools without any explicit policy at all — not because they don't care, but because writing one from scratch feels like a legal project nobody has time for.",
+ why:"A basic policy, even an imperfect one, gives a team a shared, explicit understanding of what's fine and what's not — replacing an inconsistent, undocumented set of individual judgment calls with one everyone can point to.",
+ who:"Any small business or team using AI tools with no existing written policy — especially those handling any client, financial, health, or legal information.",
+ accomplishes:"A starting AI use policy grounded in the NIST AI Risk Management Framework, ready for an attorney's review rather than starting from a blank page.",
+ tools:"The <a href=\"templates.html\">AI Use Policy Starter Prompt</a> template; see the <a href=\"library.html\">Resource Library</a>'s Business Applications &amp; Governance module for the primary NIST and bar-association sources this is grounded in.",
+ manual:"Write a policy from scratch, or copy a generic template found online that doesn't reflect your actual tools, data, or regulatory situation.",
+ semi:"Run the AI Use Policy Starter Prompt template with your real business details, generating a policy draft organized around NIST's Govern/Map/Measure/Manage structure, then have an actual attorney review it before adoption — especially in a regulated industry.",
+ full:"Revisit the policy on a fixed schedule (e.g. every 6 months or whenever a new AI tool is adopted), formally log which tools are approved vs. prohibited, and make policy review part of onboarding for new hires rather than a one-time document nobody rereads.",
+ steps:"<ol class=\"mini-list\"><li>Read the NIST AI RMF's plain-language framing on the <a href=\"about.html\">About</a> and Library pages before drafting anything — it takes 20-30 minutes and changes what you ask for.</li><li>Run the AI Use Policy Starter Prompt template with your real business details.</li><li>Have an actual attorney review the draft — this playbook produces a starting point, not a finished legal document.</li><li>Share the adopted policy with everyone who uses AI tools at your organization, not just leadership.</li><li>Set a calendar reminder to revisit it at a fixed interval.</li></ol>",
+ promptLink:["Template: AI Use Policy Starter Prompt","templates.html"],
+ risks:"The single biggest risk is treating an AI-drafted policy as final without attorney review — this is explicitly a starting draft, and the stakes of getting governance wrong (confidentiality breaches, regulatory exposure) are too high to skip that step, especially in a regulated profession.",
+ kpis:["Whether a written policy exists at all (binary, and the most important metric)","Time since last policy review","% of team members who've actually read the current policy"]},
+
+{id:"email",label:"Email Workflow",
+ problem:"Email remains the primary channel for most business communication, and most people spend real, recurring time drafting replies to a fairly small set of recurring message types.",
+ why:"Unlike meetings, email happens constantly throughout the day in short bursts — a workflow that saves even a few minutes per message compounds fast across dozens of emails a week.",
+ who:"Anyone with a moderate-to-high volume inbox of client, customer, or internal correspondence.",
+ accomplishes:"A faster, more consistent email drafting process for your most common message types, without losing your actual voice or making commitments you didn't intend.",
+ tools:"Any general chat model — the Email drafting and triage <a href=\"use-cases.html\">Use Case</a> covers the single-message version of this workflow.",
+ manual:"Draft every email from scratch, even the ones that are variations on a message you've written dozens of times before.",
+ semi:"Identify your 3-5 most common email types (status updates, meeting requests, a specific kind of client question) and use a consistent prompt structure for each — stating your intended answer, not asking the AI to decide it — then personally review before sending.",
+ full:"Build a small personal library of your proven email prompts (see the <a href=\"playbooks.html\">Prompt Library for Teams</a> playbook) for your most common message types, so drafting starts from a known-good pattern instead of a blank prompt each time.",
+ steps:"<ol class=\"mini-list\"><li>Track your email patterns for a week — which types of messages do you write most often?</li><li>For your top 3-5 types, write a reusable prompt structure once, following the Use Case pattern.</li><li>Always state your intended answer or decision in the prompt — never let the AI decide what you should say.</li><li>Read every draft in full before sending — no exceptions, especially for anything involving commitments or numbers.</li><li>Refine your saved prompts over time based on which ones need the least editing after generation.</li></ol>",
+ promptLink:["Use Case: Email drafting and triage","use-cases.html"],
+ risks:"The most common failure mode is sending a draft with a factual error or an unintended commitment because it wasn't fully read before sending — treat 'read the whole draft' as a non-negotiable step, not an optional one.",
+ kpis:["Average time to draft a reply, before vs. after","% of drafts sent with no or minor edits","Number of reusable prompts in your personal library"]},
+
+{id:"sop-ops",label:"SOP & Operations",
+ problem:"Beyond any single process, a growing team accumulates operational knowledge unevenly — some processes are well-documented, most exist only in one person's head, and nobody has time to formally write them all up.",
+ why:"Documented operations are what let a business function without depending on one specific person being available — this is the difference between a business and a really busy individual.",
+ who:"Any small business or team past the size where everything can run on informal, undocumented knowledge.",
+ accomplishes:"A growing, consistent set of documented operating procedures across the business, built faster than manual documentation would allow.",
+ tools:"The <a href=\"templates.html\">SOP Drafting Prompt</a> template for turning messy process knowledge into structured documentation.",
+ manual:"Rely on institutional knowledge and informal training — works until the person who knows the process is unavailable, at which point the gap becomes visible and costly.",
+ semi:"Whenever a process gap becomes visible (someone asks 'how do we normally handle this?'), use the SOP Drafting Prompt template immediately to capture and structure it, rather than letting the moment pass undocumented again.",
+ full:"Maintain a living index of all SOPs (paired with the <a href=\"playbooks.html\">Internal Knowledge Base</a> playbook so they're actually searchable), with an owner assigned to keep each one current, and a standing rule that any newly discovered undocumented process gets an SOP within a set number of days.",
+ steps:"<ol class=\"mini-list\"><li>List every process currently living only in someone's head, not in writing.</li><li>Prioritize by risk — what would hurt most if the one person who knows it were unavailable tomorrow.</li><li>Run each one through the SOP Drafting Prompt template, starting with the highest-priority gaps.</li><li>Store all SOPs in one place your team actually checks (pair with the Internal Knowledge Base playbook).</li><li>Assign an owner for each SOP responsible for keeping it current as the process evolves.</li></ol>",
+ promptLink:["Template: SOP Drafting Prompt","templates.html"],
+ risks:"An SOP that's written once and never updated becomes actively misleading as the real process drifts from what's documented — assign explicit ownership rather than treating documentation as a one-time project.",
+ kpis:["Number of critical processes with a documented SOP","Average SOP age since last review","Time to onboard a new hire onto a documented process vs. an undocumented one"]}
+];
+
+function renderPB(p){
+  return `<div class="pb-card">
+    <h3>${p.label}</h3>
+    <div class="pb-sub">A full playbook: business problem, workflow, three levels of implementation, and how to measure it.</div>
+    <div class="pb-row"><div class="lbl">Business problem</div><p>${p.problem}</p></div>
+    <div class="pb-row"><div class="lbl">Why it matters</div><p>${p.why}</p></div>
+    <div class="pb-row"><div class="lbl">Who it's for</div><p>${p.who}</p></div>
+    <div class="pb-row"><div class="lbl">What this workflow accomplishes</div><p>${p.accomplishes}</p></div>
+    <div class="pb-row"><div class="lbl">Tools needed</div><p>${p.tools}</p></div>
+    <div class="pb-row"><div class="lbl">Three levels of implementation</div>
+      <div class="maturity-grid">
+        <div class="maturity-card"><div class="m-tag">Manual</div><p>${p.manual}</p></div>
+        <div class="maturity-card"><div class="m-tag">Semi-automated</div><p>${p.semi}</p></div>
+        <div class="maturity-card"><div class="m-tag">Fully implemented</div><p>${p.full}</p></div>
+      </div>
+    </div>
+    <div class="pb-row"><div class="lbl">Step-by-step build</div>${p.steps}</div>
+    <div class="pb-row"><div class="lbl">Related resource</div><div class="tag-row"><a class="rel-pill" href="${p.promptLink[1]}">${p.promptLink[0]} →</a></div></div>
+    <div class="pb-row"><div class="lbl">Risks &amp; review points</div><div class="risk-box"><b>⚠</b> ${p.risks}</div></div>
+    <div class="pb-row"><div class="lbl">KPIs — how you'd know it's working</div><div class="kpi-row">${p.kpis.map(k=>`<span class="kpi-pill">${k}</span>`).join('')}</div></div>
+  </div>`;
+}
+const tabWrap=document.getElementById('pbTabs'); const panelWrap=document.getElementById('pbPanels');
+tabWrap.setAttribute('role','tablist'); tabWrap.setAttribute('aria-label','Playbook');
+PB.forEach((p,i)=>{
+  const tab=document.createElement('button'); tab.className='pb-tab'+(i===0?' active':''); tab.textContent=p.label;
+  tab.setAttribute('role','tab'); tab.setAttribute('aria-selected',i===0?'true':'false'); tab.id='pbtab-'+p.id; tab.setAttribute('aria-controls','pbpanel-'+p.id);
+  tab.onclick=()=>{
+    document.querySelectorAll('#pbTabs .pb-tab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false');});
+    tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+    document.querySelectorAll('#pbPanels .pb-panel').forEach(pn=>pn.classList.remove('active'));
+    document.getElementById('pbpanel-'+p.id).classList.add('active');
+  };
+  tabWrap.appendChild(tab);
+  const panel=document.createElement('div'); panel.className='pb-panel'+(i===0?' active':''); panel.id='pbpanel-'+p.id; panel.setAttribute('role','tabpanel'); panel.setAttribute('aria-labelledby','pbtab-'+p.id);
+  panel.innerHTML = renderPB(p);
+  panelWrap.appendChild(panel);
+});
+</script>
+</body>
+</html>

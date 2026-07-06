@@ -1,0 +1,44 @@
+APPROVED / PROHIBITED USE MATRIX — RUN THIS PROMPT
+Zero → Frontier — free, ungated, no attribution required
+
+GROUNDING: This pairs with the AI Use Policy Starter Prompt — that
+one drafts your overall policy narrative; this one produces the
+specific approved/prohibited task matrix that policy should reference.
+Grounded in the same NIST AI RMF framework:
+https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+This is a starting draft, not legal advice — have it reviewed by an
+attorney before adoption, especially in a regulated industry.
+
+HOW TO USE THIS: List your team's actual AI use cases (from your Use
+Case Inventory if you have one) and let the AI sort them into a clear
+matrix.
+
+---
+
+Help me build an approved/prohibited AI use matrix. Here are the
+AI use cases my team actually does or might do:
+[list every realistic use case — drafting emails, research, code,
+client communications, HR decisions, financial analysis, etc.]
+
+DO WE HANDLE ANY OF THE FOLLOWING? [check all that apply, or describe]
+- Client/customer personal data
+- Financial or payment information
+- Health information
+- Legal documents or advice
+- Hiring/HR decisions
+- Anything covered by a specific regulation (name it if so)
+
+For each use case I listed, classify it into one of three columns:
+1. APPROVED, NO RESTRICTIONS — low-risk, no sensitive data involved
+2. APPROVED WITH HUMAN REVIEW REQUIRED — useful but needs a check
+   before anything goes out or gets acted on
+3. PROHIBITED — should not be done with AI tools at our organization,
+   and explain specifically why (what's the risk)
+
+Be conservative with category 3 given what I told you about sensitive
+data — when in doubt between "review required" and "prohibited," flag
+it as prohibited pending an attorney's input rather than guessing.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

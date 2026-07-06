@@ -1,0 +1,33 @@
+NEWSLETTER DRAFTING — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Paste in your raw update items or a longer piece of
+content, and get a structured newsletter draft — not a generic
+template, one built from what you actually have to say this issue.
+
+---
+
+I need to draft this issue of my newsletter. Here's what I have to
+share:
+[list your raw updates, links, or paste a longer piece of content
+to draw from]
+
+AUDIENCE: [who reads this newsletter]
+TYPICAL LENGTH: [short/scannable vs. longer-form]
+TONE: [your usual voice — casual, professional, personal]
+
+Draft the issue with:
+1. A subject line — give me 3 options, each testing a different
+   angle (curiosity, benefit-forward, direct).
+2. An opening line that isn't generic ("Hope this finds you well" —
+   avoid anything that could be copy-pasted into any newsletter).
+3. The body, organized by the items I gave you, each with a clear
+   one-line takeaway before the detail.
+4. One clear call to action at the end — not three competing ones.
+
+Keep every fact and number exactly as I stated it — don't add
+statistics or claims I didn't give you.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

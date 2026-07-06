@@ -1,0 +1,66 @@
+AI USE POLICY STARTER — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+GROUNDING: This prompt is structured around the U.S. National
+Institute of Standards and Technology's AI Risk Management Framework
+(AI RMF 1.0) — a free, voluntary framework, not a law or vendor
+product. Official document: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+This is a STARTING DRAFT for a small business with no dedicated legal
+team — have an actual lawyer review anything you plan to enforce as
+policy, especially in a regulated industry.
+
+HOW TO USE THIS: Fill in your business details, then paste the whole
+prompt into an AI tool. It will draft a starter policy organized
+around NIST's four functions: Govern, Map, Measure, Manage.
+
+---
+
+I need a starter AI use policy for my business. Here's the context:
+
+BUSINESS TYPE: [e.g. "5-person marketing consultancy," "solo law
+practice," "10-person nonprofit"]
+DO WE HANDLE SENSITIVE DATA? [client financials, health info, legal
+matters, personal data — describe what, if anything]
+CURRENT AI TOOLS IN USE: [list what your team already uses]
+INDUSTRY REGULATIONS THAT APPLY, IF ANY: [e.g. HIPAA, attorney
+ethics rules, financial compliance — leave blank if none apply]
+
+Structure the policy around these four sections (based on the NIST
+AI Risk Management Framework's four functions):
+
+1. GOVERN — who is responsible for AI decisions at our organization,
+   and what's the basic ground rule for using AI here (e.g., "AI can
+   assist drafting, but a human must review before anything is sent
+   or filed").
+
+2. MAP — where AI is actually likely to touch our work (list the
+   realistic use cases based on what I described above) and what
+   could go wrong in each (data exposure, inaccurate output, bias).
+
+3. MEASURE — simple, non-technical ways we'll check whether AI
+   output is accurate and safe to use (e.g., "any AI-drafted client
+   communication is read in full by a human before sending").
+
+4. MANAGE — for each risk identified in MAP, state whether we: fix
+   it (add a review step), monitor it, accept it, or ban that use
+   case entirely.
+
+Also include:
+- A short "Prohibited Uses" list specific to what I described (e.g.,
+  no pasting client PII into consumer AI tools without a data
+  processing agreement in place)
+- A one-line disclosure statement for client-facing work, if
+  relevant to my business type
+
+Keep it in plain English a non-lawyer can actually read and follow —
+not compliance jargon. Remind me at the end that this is a starting
+draft, not legal advice, and should be reviewed by an actual attorney
+before being adopted as real policy — especially if I mentioned any
+regulated industry above.
+
+---
+
+For regulated professions specifically, see also: ABA Formal Opinion
+512 on generative AI (lawyers): https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

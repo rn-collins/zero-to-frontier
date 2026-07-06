@@ -1,0 +1,45 @@
+AI TOOL EVALUATION — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Find the pricing page and privacy policy of the AI
+tool you're considering (copy the URL, or paste the actual text of
+those pages if the AI can't browse). Paste them into the prompt
+below along with your own situation. The AI will produce a structured
+evaluation — you don't fill out a blank form yourself.
+
+---
+
+I'm evaluating whether to adopt a new AI tool. Here is the
+information:
+
+TOOL NAME: [name]
+WHAT I'D USE IT FOR: [your specific recurring task from your Use
+Case Inventory, if you have one]
+PRICING PAGE CONTENT: [paste the text, or the URL if you can browse]
+PRIVACY POLICY CONTENT: [paste the text, or the URL if you can browse]
+
+Evaluate this tool against these six criteria, and for each one,
+tell me what you found and flag anything unclear or not publicly
+stated (don't guess — say "not stated" if the page doesn't say):
+
+1. FIT — does this tool's actual features match my stated task, or
+   is it overkill / underkill for what I need?
+2. DATA HANDLING — is my input used to train the tool's models by
+   default? Is there an opt-out, and is it self-serve or does it
+   require contacting support?
+3. COST STRUCTURE — what exactly is included free, and what's the
+   hard cap (messages/day, minutes/month, credits)? Is there a
+   surprise-overage risk?
+4. RELIABILITY — does the tool disclose known limitations or
+   failure modes anywhere on its own pages?
+5. EXIT PLAN — can I export my data if I stop using this? Is there
+   vendor lock-in risk (e.g., proprietary hosting, no data export)?
+6. HUMAN OVERSIGHT FIT — does adopting this tool require me to add
+   any new review step before I trust its output for real use?
+
+End with a one-paragraph verdict: adopt, adopt with a specific
+caution, or don't adopt yet — and the single biggest reason why.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

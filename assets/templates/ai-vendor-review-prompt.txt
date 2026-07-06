@@ -1,0 +1,33 @@
+AI VENDOR REVIEW — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Use this when comparing two or more AI vendors/tools
+side by side, not just evaluating one in isolation (that's the AI
+Tool Evaluation Prompt). Paste in details for each candidate.
+
+---
+
+I'm choosing between multiple AI vendors for [use case]. Here are the
+candidates:
+
+VENDOR A: [name] — [paste pricing/privacy page content or URL]
+VENDOR B: [name] — [paste pricing/privacy page content or URL]
+VENDOR C (optional): [name] — [paste pricing/privacy page content or URL]
+
+Build me a side-by-side comparison table with these rows:
+1. Core capability fit for [use case]
+2. Free tier or trial terms
+3. Ongoing cost at realistic usage volume: [describe your expected volume]
+4. Data handling / training-data default
+5. Data export / exit difficulty if I later switch vendors
+6. Anything each vendor discloses about known limitations or risks
+
+Then give me a recommendation with the single deciding factor — not
+just "it depends," but which one and why, given what I told you about
+my use case and volume. If the vendors are genuinely too close to
+call on the facts provided, say so explicitly rather than picking one
+arbitrarily.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

@@ -1,0 +1,55 @@
+HUMAN REVIEW SELF-CHECK — RUN THIS PROMPT ON AI OUTPUT BEFORE YOU USE IT
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: After an AI tool drafts something for you, paste
+that draft BACK into the same or a different AI tool with this
+prompt. You're using the AI to help audit its own (or another
+model's) output before you trust it — this does not replace your own
+judgment, it structures it.
+
+---
+
+I want you to review this AI-generated output critically, as if you
+were checking someone else's work, not defending it:
+
+OUTPUT TO REVIEW: [paste the AI-generated draft/output]
+WHAT IT WAS SUPPOSED TO ACCOMPLISH: [state the original goal]
+WHERE IT WILL BE USED: [e.g. "sent to a client," "published
+publicly," "internal only"]
+
+Check it against these seven points and flag anything that fails,
+rather than assuming it passes:
+
+1. FACTUAL CLAIMS — does it contain any number, date, name, or
+   statistic I should independently verify rather than assume is
+   correct?
+
+2. ATTRIBUTION — does it attribute anything to a specific person,
+   company, or study? If so, flag it as needing verification.
+
+3. TONE AND VOICE — does this sound generic/AI-written rather than
+   like an actual person wrote it? Point out specific phrases that
+   feel like AI filler or hedging.
+
+4. IRREVERSIBLE ACTIONS — does using this output as-is trigger
+   anything that can't be undone (a send, a payment, a public post,
+   a legal or medical claim)? If so, say explicitly that a human
+   must confirm before that action happens.
+
+5. PRIVACY — does this reveal or reference anything that looks like
+   confidential, proprietary, or personal information that shouldn't
+   be here?
+
+6. BIAS OR FAIRNESS — is there any stereotype, unfounded assumption,
+   or exclusionary language, even subtle?
+
+7. FINAL VERDICT — would you be comfortable if a human put their
+   name on this exactly as written? If not, say specifically what
+   needs to change before it should go out.
+
+Be direct about problems — don't soften a real issue into a vague
+suggestion.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

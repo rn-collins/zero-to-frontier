@@ -1,0 +1,37 @@
+DELIVERABLE REVIEW CHECKLIST — RUN THIS PROMPT BEFORE SENDING CLIENT WORK
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Paste in a finished client deliverable (a report,
+a proposal, a design brief) before you send it — this is a final
+quality pass, run separately from the Human Review Self-Check prompt,
+which focuses on AI-specific risks rather than deliverable quality.
+
+---
+
+I'm about to send this deliverable to a client. Review it critically
+before I do:
+
+DELIVERABLE: [paste the full deliverable]
+WHAT THE CLIENT ASKED FOR: [the original brief or request]
+CLIENT CONTEXT: [anything specific about this client's expectations,
+sensitivities, or prior feedback]
+
+Check it against:
+1. Does it actually answer/deliver what the client asked for — not
+   a well-written document that drifted from the original ask?
+2. Are there any internal inconsistencies — numbers, dates, or names
+   that don't match elsewhere in the document?
+3. Is the tone appropriate for this specific client, based on what
+   I told you about them?
+4. Is anything overpromised — a guarantee, timeline, or outcome
+   stated more confidently than it should be?
+5. Is there anything that reads as generic or template-like that
+   should be more specific to this client?
+6. One thing that would make this deliverable noticeably stronger
+   before it goes out.
+
+Be specific about what to fix — not just "looks good" or vague praise.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

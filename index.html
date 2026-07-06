@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>Zero → Frontier — A Free, Fully-Sourced Guide to Understanding AI</title>
+<meta name="description" content="A free, plain-language, fully-sourced guide to artificial intelligence — from Turing's 1950 thought experiment to today's frontier models — plus 237 verified free resources and the working techniques professionals actually use.">
+<meta property="og:title" content="Zero → Frontier — A Free, Fully-Sourced Guide to Understanding AI">
+<meta property="og:description" content="A free, plain-language, fully-sourced guide to artificial intelligence — from Turing's 1950 thought experiment to today's frontier models — plus 237 verified free resources and the working techniques professionals actually use.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zero → Frontier — A Free, Fully-Sourced Guide to Understanding AI">
+<meta name="twitter:description" content="A free, plain-language, fully-sourced guide to artificial intelligence — from Turing's 1950 thought experiment to today's frontier models — plus 237 verified free resources and the working techniques professionals actually use.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.hero-home{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding:130px 0 60px;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--c1);border:1px solid rgba(110,231,255,0.3);padding:6px 14px;border-radius:999px;width:fit-content;margin-bottom:26px;background:rgba(110,231,255,0.06);}
+.hero-home p.lede{font-size:clamp(1.02rem,2vw,1.22rem);}
+.trust-row{display:flex;gap:28px;flex-wrap:wrap;margin-top:44px;padding-top:28px;border-top:1px solid var(--line);}
+.trust-item{font-size:0.78rem;color:var(--sub2);display:flex;align-items:center;gap:8px;}
+.trust-item .ic{color:var(--c3);}
+.audience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px;}
+@media(max-width:900px){.audience-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:520px){.audience-grid{grid-template-columns:1fr;}}
+.aud-pill{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:16px 18px;font-size:0.86rem;color:var(--sub);}
+.aud-pill b{color:var(--ink);display:block;font-size:0.92rem;margin-bottom:2px;}
+.how-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px;}
+@media(max-width:800px){.how-steps{grid-template-columns:1fr;}}
+.how-step{position:relative;padding-left:0;}
+.how-step .n{width:36px;height:36px;border-radius:10px;background:var(--panel-solid);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--c1);margin-bottom:14px;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html" class="current">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html">History</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="tools.html">Tools</a>
+      <a href="playbooks.html">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero-home first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><circle cx="30" cy="115" r="6" fill="var(--c1)"/><circle cx="70" cy="80" r="5" fill="var(--c2)"/><circle cx="105" cy="45" r="5" fill="var(--c2)"/><circle cx="135" cy="20" r="7" fill="var(--c5)"/><path d="M30 115 L70 80 L105 45 L135 20" stroke="var(--c1)" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="115" r="12" stroke="var(--c1)" stroke-width="1.5" opacity="0.4"/><circle cx="135" cy="20" r="14" stroke="var(--c5)" stroke-width="1.5" opacity="0.4"/></svg></div>
+  <div class="wrap">
+    <div class="eyebrow">A free educational project</div>
+    <h1>Understand AI from <span class="grad-text">zero to the frontier</span> — for free, with every claim sourced.</h1>
+    <p class="lede">This is a plain-language, fully-cited guide to what artificial intelligence actually is, how it works, how to use it well, and where it stands today — built for people who want the real thing, not a marketing page. No account, no paywall, no email required.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="start-here.html">Not sure where to start? →</a>
+      <a class="btn btn-ghost" href="history.html">Start with the history</a>
+      <a class="btn btn-ghost" href="library.html">Browse the 237 free resources</a>
+    </div>
+    <div class="trust-row">
+      <span class="trust-item"><span class="ic">✓</span> Every fact linked to its primary source</span>
+      <span class="trust-item"><span class="ic">✓</span> No sign-up, no paywall, no ads</span>
+      <span class="trust-item"><span class="ic">✓</span> Written for complete beginners and working practitioners alike</span>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="what-heading">
+  <div class="wrap">
+    <div class="kicker">What this is</div>
+    <h2 id="what-heading">Eleven sections, twenty pages. One complete, honest picture of AI.</h2>
+    <p class="lede">Most "learn AI" content is either a sales funnel for a paid course or a wall of jargon with nothing to click through to. This project exists to be neither — a self-contained reference you can read once or come back to for years.</p>
+    <div class="grid-3" style="margin-top:32px;">
+      <a class="card card-link reveal" href="start-here.html">
+        <div class="num">01 · Start Here</div>
+        <h3>Not sure where to begin?</h3>
+        <p>Answer what brought you here and how much time you have — this page routes you to the right pages, no guessing required.</p>
+        <div class="go">Find your path →</div>
+      </a>
+      <a class="card card-link reveal" href="history.html">
+        <div class="num">02 · History</div>
+        <h3>Where AI actually came from</h3>
+        <p>A sourced timeline from Turing's 1950 paper through this year's frontier releases — 17 turning points, each with primary-source links.</p>
+        <div class="go">Read the timeline →</div>
+      </a>
+      <a class="card card-link reveal" href="concepts.html">
+        <div class="num">03 · Concepts</div>
+        <h3>How it actually works</h3>
+        <p>The mechanics in plain English — neural networks, training, attention, tokens — plus a visual map of how AI, machine learning, and generative AI relate.</p>
+        <div class="go">Explore the concepts →</div>
+      </a>
+      <a class="card card-link reveal" href="techniques.html">
+        <div class="num">04 · Techniques</div>
+        <h3>How to actually use it well</h3>
+        <p>The real working methods: prompt structure, image and video prompting, agent design, and the vibe-coding workflow — with worked examples.</p>
+        <div class="go">See the techniques →</div>
+      </a>
+      <a class="card card-link reveal" href="use-cases.html">
+        <div class="num">05 · Use Cases</div>
+        <h3>Concrete tasks, worked examples</h3>
+        <p>Research synthesis, meeting notes, drafting, code help, and more — each with a real example and a named human-review step.</p>
+        <div class="go">See the use cases →</div>
+      </a>
+      <a class="card card-link reveal" href="tools.html">
+        <div class="num">06 · Tools</div>
+        <h3>Which AI tool should you use?</h3>
+        <p>Ten pages: general assistants head-to-head, plus dedicated comparisons for research, meetings/knowledge, writing, marketing, automation, coding, images, video, and audio/voice tools — all sourced to official pricing and privacy pages.</p>
+        <div class="go">Compare the tools →</div>
+      </a>
+      <a class="card card-link reveal" href="playbooks.html">
+        <div class="num">07 · Playbooks</div>
+        <h3>Full workflows, not just tasks</h3>
+        <p>Ten complete playbooks — manual, semi-automated, and fully-implemented versions of each, with build steps, risks, and real KPIs.</p>
+        <div class="go">See the playbooks →</div>
+      </a>
+      <a class="card card-link reveal" href="templates.html">
+        <div class="num">08 · Templates</div>
+        <h3>Prompts you paste, not forms you fill</h3>
+        <p>Eighteen ready-to-run prompt templates across Strategy, Operations, Marketing, Client Work, and Governance — your AI tool does the drafting.</p>
+        <div class="go">Get the templates →</div>
+      </a>
+      <a class="card card-link reveal" href="frontier.html">
+        <div class="num">09 · Frontier &amp; AGI</div>
+        <h3>Where things stand right now</h3>
+        <p>Today's model landscape, the real numbers behind the hype, and the genuinely unresolved debate about artificial general intelligence.</p>
+        <div class="go">See where we are →</div>
+      </a>
+      <a class="card card-link reveal" href="library.html">
+        <div class="num">10 · Library</div>
+        <h3>237 free resources, sourced and searchable</h3>
+        <p>Every resource this project draws from — official docs, papers, and tutorials — organized by topic and searchable by keyword.</p>
+        <div class="go">Search the library →</div>
+      </a>
+      <a class="card card-link reveal" href="about.html">
+        <div class="num">11 · About</div>
+        <h3>Who built this, and why</h3>
+        <p>The sourcing standard this project holds itself to, and how to flag a broken link or an error.</p>
+        <div class="go">Read the about page →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="trust-heading" class="tinted">
+  <div class="wrap">
+    <div class="kicker">Why trust it</div>
+    <h2 id="trust-heading">The standard this site holds itself to</h2>
+    <p class="lede">Anyone can claim to be "fully sourced." Here's what that actually means in practice, and where to check it for yourself.</p>
+    <div class="trust-block">
+      <div class="trust-card reveal">
+        <span class="ic" aria-hidden="true">🔗</span>
+        <h3>Every claim links to a named source</h3>
+        <p>A company's own announcement, a peer-reviewed paper, or an established outlet's reporting — not a vague "studies show." See the <a href="about.html">sourcing standard</a> in full.</p>
+      </div>
+      <div class="trust-card reveal">
+        <span class="ic" aria-hidden="true">🚫</span>
+        <h3>No account, no data collection, no ads</h3>
+        <p>Nothing here is gated behind an email address, and nothing tracks you to sell you something later. That's not a marketing line — check the <a href="about.html">About page</a> for the actual policy.</p>
+      </div>
+      <div class="trust-card reveal">
+        <span class="ic" aria-hidden="true">⚖️</span>
+        <h3>Disagreements are shown, not hidden</h3>
+        <p>Where credentialed experts genuinely disagree — like whether current AI is close to AGI — this site presents both sides on the <a href="frontier.html">Frontier &amp; AGI page</a> instead of picking a winner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="who-heading">
+  <div class="wrap">
+    <div class="kicker">Who this is for</div>
+    <h2 id="who-heading">Built for anyone starting from zero — no background assumed.</h2>
+    <div class="audience-grid">
+      <div class="aud-pill"><b>Total beginners</b>who've never used AI and want the real story, not hype</div>
+      <div class="aud-pill"><b>Working professionals</b>who want to use AI well, not just talk about it</div>
+      <div class="aud-pill"><b>Students &amp; educators</b>who want a citable, accurate reference</div>
+      <div class="aud-pill"><b>Builders &amp; founders</b>who want the actual techniques, not a sales pitch</div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="stats-heading" class="tinted">
+  <div class="wrap">
+    <div class="kicker">By the numbers</div>
+    <h2 id="stats-heading">What's actually here</h2>
+    <div class="stat-grid">
+      <div class="stat"><div class="num">76</div><div class="lbl">years of history covered, start to today</div></div>
+      <div class="stat"><div class="num">17</div><div class="lbl">sourced turning points on the timeline</div></div>
+      <div class="stat"><div class="num">237</div><div class="lbl">free resources, every one verified and linked</div></div>
+      <div class="stat"><div class="num">$0</div><div class="lbl">cost to read, use, or share any of it</div></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="how-heading">
+  <div class="wrap">
+    <div class="kicker">How to use this site</div>
+    <h2 id="how-heading">Three ways to start</h2>
+    <div class="how-steps">
+      <div class="card">
+        <div class="n" aria-hidden="true">1</div>
+        <h3>Read it front to back</h3>
+        <p style="color:var(--sub);font-size:0.9rem;">History → Concepts → Techniques → Use Cases → Tools → Templates → Frontier &amp; AGI, in order — about 60–75 minutes for the full picture.</p>
+      </div>
+      <div class="card">
+        <div class="n" aria-hidden="true">2</div>
+        <h3>Not sure? Let Start Here route you</h3>
+        <p style="color:var(--sub);font-size:0.9rem;">Answer what brought you here and how much time you have, and <a href="start-here.html">Start Here</a> points you to the right pages directly.</p>
+      </div>
+      <div class="card">
+        <div class="n" aria-hidden="true">3</div>
+        <h3>Bookmark and return</h3>
+        <p style="color:var(--sub);font-size:0.9rem;">The model landscape moves fast. The Frontier page and Library are the pages most worth revisiting as things change.</p>
+      </div>
+    </div>
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Ready when you are</div>
+        <h3>Start with where AI actually came from.</h3>
+        <p>Turing, Dartmouth, two winters, and the transformer — the sourced history, in full.</p>
+      </div>
+      <a class="btn btn-primary" href="history.html">Begin the timeline →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional advice of any kind. Model capabilities, pricing, and market figures move quickly — verify against the linked primary sources before relying on any specific number.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

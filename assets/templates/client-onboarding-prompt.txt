@@ -1,0 +1,43 @@
+CLIENT ONBOARDING & PROPOSAL DRAFTING — RUN THIS PROMPT
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Fill in your real details about the client/project.
+The AI drafts either an onboarding sequence or a proposal outline —
+pick which one you need, or ask for both.
+
+---
+
+I need help drafting client-facing material. Here's the context:
+
+WHAT I DO: [your business/service]
+CLIENT/PROJECT: [who this is for, and what they need]
+KEY DETAILS: [scope, timeline, price if relevant, anything unusual
+about this client]
+TONE: [formal / warm-professional / casual — pick one]
+
+I need ONE of the following (tell me which, or ask for both):
+
+OPTION A — A 3-EMAIL ONBOARDING SEQUENCE:
+1. Welcome email — sets expectations, confirms next steps
+2. Information-request email — asks for what you need from them to
+   start, as a clear checklist, not a vague ask
+3. Kickoff-confirmation email — confirms start date and what happens
+   next
+
+OPTION B — A PROPOSAL OUTLINE:
+1. Problem statement (in their words, based on what I told you)
+2. What's included / scope
+3. What's explicitly NOT included (to prevent scope creep later)
+4. Timeline with milestones
+5. Investment/pricing section (leave exact numbers as placeholders
+   if I haven't given them)
+6. Next steps / how to say yes
+
+Constraints:
+- Don't invent scope, pricing, or timeline details I haven't given
+  you — use placeholders like [PRICE] if I left something out.
+- Keep it specific to what I told you, not generic template language.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

@@ -1,0 +1,54 @@
+AI USE CASE INVENTORY WORKSHEET
+Zero → Frontier — free, ungated, no attribution required
+
+Fill in one row per recurring task you do. This surfaces where AI
+assistance is actually worth trying versus where it isn't.
+
+For each task, answer:
+
+TASK NAME:
+  e.g. "Weekly status update to my team"
+
+HOW OFTEN:
+  e.g. daily / weekly / monthly
+
+CURRENT TIME COST:
+  e.g. 30 minutes per instance
+
+WHAT MAKES IT SLOW:
+  e.g. "I know what to say, drafting it takes the time" vs.
+  "I have to research the answer first" — these need different
+  approaches. Drafting-bottleneck tasks are good AI candidates.
+  Research-bottleneck tasks need real sources, not guessing.
+
+CONFIDENTIALITY LEVEL:
+  Public / Internal / Confidential / Highly sensitive
+  (Anything above "Internal" — check your tool's data-handling
+  terms before pasting it in. See the Tools page.)
+
+REVERSIBILITY:
+  Fully reversible (a draft you'll reread) vs. hard to reverse
+  (a sent email, a filed document, a public post)
+  Hard-to-reverse tasks always need a human review step.
+
+SUGGESTED APPROACH:
+  Which Use Case pattern this matches (meeting notes, research
+  synthesis, drafting, code help, etc.) and which tool fits best.
+
+WORTH TRYING? (yes / no / not yet)
+
+---
+
+EXAMPLE ROW, FILLED IN:
+
+TASK NAME: Weekly client status email
+HOW OFTEN: weekly
+CURRENT TIME COST: 25 minutes
+WHAT MAKES IT SLOW: drafting bottleneck — I know the update, writing
+  it politely takes the time
+CONFIDENTIALITY LEVEL: Internal (client name, no sensitive data)
+REVERSIBILITY: reversible until sent — draft only, I review before send
+SUGGESTED APPROACH: email drafting pattern, any general chat model
+WORTH TRYING?: yes
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

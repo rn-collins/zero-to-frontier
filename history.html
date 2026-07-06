@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236ee7ff'/%3E%3Cstop offset='55%25' stop-color='%23a78bfa'/%3E%3Cstop offset='100%25' stop-color='%23fb7185'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
+<title>The History of AI, Fully Sourced — Zero → Frontier</title>
+<meta name="description" content="A sourced timeline of artificial intelligence from Turing's 1950 thought experiment through today's frontier models — 17 turning points, each with primary-source links.">
+<meta property="og:title" content="The History of AI, Fully Sourced — Zero → Frontier">
+<meta property="og:description" content="A sourced timeline of artificial intelligence from Turing's 1950 thought experiment through today's frontier models — 17 turning points, each with primary-source links.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The History of AI, Fully Sourced — Zero → Frontier">
+<meta name="twitter:description" content="A sourced timeline of artificial intelligence from Turing's 1950 thought experiment through today's frontier models — 17 turning points, each with primary-source links.">
+<meta name="twitter:image" content="assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.tl{position:relative;margin-top:20px;}
+.tl-track{position:absolute;left:20px;top:6px;bottom:6px;width:2px;background:var(--line);}
+.tl-track-fill{position:absolute;left:20px;top:0;width:2px;background:var(--grad);height:0%;transition:height .1s linear;}
+.tl-item{position:relative;padding-left:56px;margin-bottom:6px;}
+.tl-dot{position:absolute;left:12px;top:8px;width:17px;height:17px;border-radius:50%;background:var(--panel-solid);border:2px solid var(--sub2);z-index:2;transition:.3s;}
+.tl-item.in .tl-dot{border-color:var(--c1);box-shadow:0 0 0 5px rgba(110,231,255,0.12);}
+.tl-card{cursor:pointer;border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:20px 24px;margin-bottom:16px;transition:.25s;}
+.tl-card:hover{background:rgba(255,255,255,0.055);border-color:rgba(110,231,255,0.35);}
+.tl-date{color:var(--c1);font-weight:700;font-size:0.82rem;}
+.tl-title{font-weight:700;font-size:1.12rem;margin:4px 0 0;}
+.tl-detail{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.tl-card.open .tl-detail{max-height:500px;margin-top:14px;}
+.tl-detail p{margin:0 0 12px;color:var(--sub);font-size:0.9rem;line-height:1.65;}
+.tl-sources{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.tl-src{font-size:0.72rem;color:var(--c1);background:rgba(110,231,255,0.08);border:1px solid rgba(110,231,255,0.25);padding:5px 11px;border-radius:999px;text-decoration:none;}
+.tl-src:hover{background:rgba(110,231,255,0.18);}
+.tl-more-title{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.07em;color:var(--sub2);margin-top:14px;margin-bottom:6px;}
+.tl-plus{float:right;color:var(--sub2);font-size:1.1rem;transition:.3s;}
+.tl-card.open .tl-plus{transform:rotate(45deg);color:var(--c1);}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-nav">
+  <div class="navrow">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Zero → Frontier</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <nav class="navlinks" id="navLinks" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="history.html" class="current">History</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="techniques.html">Techniques</a>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="tools.html">Tools</a>
+      <a href="playbooks.html">Playbooks</a>
+      <a href="templates.html">Templates</a>
+      <a href="frontier.html">Frontier &amp; AGI</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="first">
+<div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 150 150" fill="none"><circle cx="75" cy="75" r="55" stroke="var(--c1)" stroke-width="2"/><path d="M75 75 L75 35" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><path d="M75 75 L102 90" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><circle cx="75" cy="75" r="4" fill="var(--c5)"/><circle cx="75" cy="20" r="3" fill="var(--c2)"/><circle cx="130" cy="75" r="3" fill="var(--c2)"/><circle cx="75" cy="130" r="3" fill="var(--c2)"/><circle cx="20" cy="75" r="3" fill="var(--c2)"/></svg></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / History</div>
+    <div class="kicker">Page 02 of 11</div>
+    <h1>The history of AI, from 1950 to today</h1>
+    <p class="lede">Seventeen turning points, each explained in full and linked to its primary source — not a summary of a summary. Click any entry to expand it.</p>
+    <div class="tl" id="tlOuter">
+      <div class="tl-track"></div>
+      <div class="tl-track-fill" id="tlFill"></div>
+      <div id="tlList"></div>
+    </div>
+    <div class="page-next">
+      <div class="txt">
+        <div class="tag">Next: Concepts</div>
+        <h3>Now that you know where it came from — how does it actually work?</h3>
+        <p>Neural networks, training, attention, and the nesting-then-branching map of AI's subfields, explained plainly.</p>
+      </div>
+      <a class="btn btn-primary" href="concepts.html">Continue to Concepts →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Zero → Frontier</h4><p style="color:var(--sub);font-size:0.88rem;max-width:320px;">A free, fully-sourced guide to understanding artificial intelligence.</p></div>
+      <div class="foot-col"><h4>Learn</h4><a href="start-here.html">Start Here</a><a href="history.html">History</a><a href="concepts.html">Concepts</a><a href="techniques.html">Techniques</a></div>
+      <div class="foot-col"><h4>Apply</h4><a href="use-cases.html">Use Cases</a><a href="tools.html">Tools</a><a href="playbooks.html">Playbooks</a><a href="templates.html">Templates</a></div>
+      <div class="foot-col"><h4>More</h4><a href="frontier.html">Frontier &amp; AGI</a><a href="library.html">Resource Library</a><a href="about.html">About</a></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-disclaimer">Educational reference only, not professional advice of any kind. Figures move quickly — verify against the linked primary sources.</div>
+      <div>Part of the Free University project.</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>
+const timeline = [
+{date:"1950",title:"Turing's \"Computing Machinery and Intelligence\"",
+ detail:"Alan Turing opens his paper by replacing the question \"Can machines think?\" with the \"imitation game\": a human judge holds a text conversation with an unseen human and an unseen machine, and must guess which is which. Turing argued this operational test sidesteps unanswerable philosophical questions about consciousness. He also predicted that by the year 2000, machines would fool an average judge 30% of the time after five minutes of conversation — a benchmark now loosely called the \"Turing Test.\" This is the founding thought experiment of machine intelligence, published six years before the field even had a name.",
+ sources:[["Original paper (full text)","https://cs.mcgill.ca/~dprecup/courses/AI/Materials/turing1950.pdf"],["Wikipedia overview","https://en.wikipedia.org/wiki/Computing_Machinery_and_Intelligence"]],
+ more:[["3Blue1Brown: neural network series","https://www.3blue1brown.com/lessons/neural-networks"]]},
+{date:"1955–56",title:"The Dartmouth Summer Research Project",
+ detail:"John McCarthy, Marvin Minsky, Nathaniel Rochester (IBM), and Claude Shannon convene a two-month workshop at Dartmouth College, joined by Allen Newell, Herbert Simon, Arthur Samuel, and Ray Solomonoff. McCarthy's 1955 funding proposal coins the term \"artificial intelligence,\" deliberately choosing it over the already-established \"cybernetics\" to stake out a distinct field. This is the founding event of AI as a named academic discipline.",
+ sources:[["Dartmouth workshop — Wikipedia","https://en.wikipedia.org/wiki/Dartmouth_workshop"],["\"AI Coined at Dartmouth\" — Dartmouth College","https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth"],["1955 Dartmouth Proposal (AI Magazine reprint)","https://dl.acm.org/doi/10.1609/aimag.v27i4.1904"]],
+ more:[]},
+{date:"1965–1980",title:"Symbolic AI and the rise (and limits) of expert systems",
+ detail:"Researchers build AI by hand-coding logic and rules rather than learning from data — later nicknamed \"GOFAI\" (Good Old-Fashioned AI). Feigenbaum, Lederberg, and Buchanan's DENDRAL (Stanford, from 1965) infers molecular structure from mass spectrometry data. Shortliffe's MYCIN (mid-1970s) uses roughly 500 hand-written rules to diagnose bacterial infections. McDermott and CMU's XCON/R1 (1980) uses about 10,000 rules to configure DEC computer orders, reportedly saving the company tens of millions of dollars a year. These systems proved real commercial value — but each rule had to be manually elicited from human experts, exposing the \"knowledge acquisition bottleneck.\"",
+ sources:[["AI Winter overview (context on the era)","https://www.datacamp.com/blog/ai-winter"]],
+ more:[]},
+{date:"1973–1980",title:"First AI Winter",
+ detail:"Commissioned by the UK government, mathematician James Lighthill's 1973 report concludes that AI research had failed to achieve its grand promises and would keep hitting a \"combinatorial explosion\" past toy scale. The UK slashes university AI funding almost immediately; similar pessimism spreads through DARPA-funded US research shortly after — the field's first major boom-bust cycle.",
+ sources:[["AI Winter overview","https://www.datacamp.com/blog/ai-winter"]], more:[]},
+{date:"Late 1980s–early 1990s",title:"Second AI Winter",
+ detail:"The specialized Lisp machine market collapses by 1987 as cheap general-purpose workstations overtake it commercially. Expert systems built the previous decade prove expensive and brittle to maintain. DARPA cuts funding around 1988. This second collapse sets the stage for a very different approach: learning statistically from data instead of being told rules.",
+ sources:[["AI Winter overview","https://www.datacamp.com/blog/ai-winter"]], more:[]},
+{date:"1995–1997",title:"Statistical machine learning takes over",
+ detail:"Vladimir Vapnik and Corinna Cortes formalize Support Vector Machines at AT&T Bell Labs (1995). Sepp Hochreiter and Jürgen Schmidhuber publish the Long Short-Term Memory (LSTM) architecture in 1997, solving a core weakness of earlier recurrent networks. Together these mark AI's decisive shift from symbolic rules toward learning statistical patterns directly from data.",
+ sources:[], more:[["3Blue1Brown: neural network fundamentals","https://www.3blue1brown.com/lessons/neural-networks"]]},
+{date:"2012",title:"The AlexNet / ImageNet moment",
+ detail:"Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton (University of Toronto) train an 8-layer convolutional neural network on two Nvidia GTX 580 GPUs. It cuts ImageNet top-5 error to 15.3%, versus 26.2% for the next-best non-neural approach that year. This single result proved GPU-trained deep neural networks could decisively beat hand-engineered vision pipelines, igniting the modern deep-learning boom.",
+ sources:[["AlexNet — Wikipedia","https://en.wikipedia.org/wiki/AlexNet"],["IEEE Spectrum: the AlexNet source code's release","https://spectrum.ieee.org/alexnet-source-code"]],
+ more:[["Hugging Face: The Annotated Diffusion Model","https://huggingface.co/blog/annotated-diffusion"]]},
+{date:"June 2017",title:"\"Attention Is All You Need\" introduces the Transformer",
+ detail:"Ashish Vaswani and colleagues at Google publish the paper introducing the Transformer architecture, built entirely on self-attention, with no recurrence and no convolution. Every token can be compared against every other token in parallel, training far faster and capturing long-range context better. Every major large language model since — BERT, GPT, Claude, Gemini — is built on this exact architecture.",
+ sources:[["\"Attention Is All You Need\" — original paper (arXiv)","https://arxiv.org/abs/1706.03762"]],
+ more:[["Jay Alammar: The Illustrated Transformer","https://jalammar.github.io/illustrated-transformer/"],["3Blue1Brown: Attention in transformers, visually explained","https://www.3blue1brown.com/lessons/attention"]]},
+{date:"2018–2022",title:"The GPT series and the alignment turn",
+ detail:"OpenAI ships GPT-1 in June 2018, then GPT-2 in 2019 — initially withheld from public release over misuse concerns. GPT-3 follows in 2020 with 175 billion parameters and strong few-shot learning. Early 2022 brings InstructGPT, using Reinforcement Learning from Human Feedback (RLHF) to align outputs with what people actually want — evaluators preferred its outputs over raw GPT-3's roughly 85% of the time.",
+ sources:[["Generative pre-trained transformer — Wikipedia","https://en.wikipedia.org/wiki/Generative_pre-trained_transformer"]],
+ more:[["Anthropic's Interactive Prompt Engineering Tutorial","https://github.com/anthropics/prompt-eng-interactive-tutorial"]]},
+{date:"Nov 30, 2022",title:"ChatGPT launches",
+ detail:"OpenAI releases a free chat interface on top of GPT-3.5 plus RLHF — no API key, no setup. It reaches roughly 1 million users in 5 days and around 100 million in 2 months, the fastest consumer product growth ever recorded at the time — the moment generative AI enters mainstream consciousness.",
+ sources:[["OpenAI: Introducing ChatGPT","https://openai.com/index/chatgpt/"]],
+ more:[["Google AI Studio quickstart","https://ai.google.dev/gemini-api/docs/ai-studio-quickstart"]]},
+{date:"Mar 14, 2023",title:"GPT-4 arrives",
+ detail:"OpenAI's GPT-4 adds native multimodal input and demonstrates markedly stronger reasoning — including passing a simulated bar exam near the 90th percentile, per OpenAI's own released evaluations. Frontier models cross a visible threshold into professional-grade performance on standardized human tests.",
+ sources:[["OpenAI: GPT-4","https://openai.com/index/gpt-4/"]],
+ more:[["Claude Opus 4.8 documentation (for comparison)","https://docs.claude.com/en/about-claude/models/whats-new-claude-4-8"]]},
+{date:"Sept–Dec 2024",title:"Reasoning models begin: OpenAI's o1",
+ detail:"OpenAI ships o1-preview then the full o1, introducing models that spend extra inference-time compute generating an internal chain-of-thought before answering. This establishes test-time compute as a separate, additional axis of capability gain from scaling parameters or training data.",
+ sources:[["OpenAI o1 — Wikipedia","https://en.wikipedia.org/wiki/OpenAI_o1"]],
+ more:[["Anthropic: Building Effective Agents","https://www.anthropic.com/engineering/building-effective-agents"]]},
+{date:"Jan 2025",title:"DeepSeek-R1 shocks the market",
+ detail:"Chinese lab DeepSeek releases R1, an open-weight reasoning model claiming performance competitive with o1 at a reported ~$5.6M training cost via mixture-of-experts efficiency. Nvidia falls roughly 17% in a single day — nearly $1 trillion in tech market cap erased — as markets reassess whether frontier capability requires massive US-lab-scale compute.",
+ sources:[["DeepSeek — Wikipedia","https://en.wikipedia.org/wiki/DeepSeek"],["DeepSeek official news post","https://api-docs.deepseek.com/news/news250120"],["IDC Blog: DeepSeek's AI Innovation","https://blogs.idc.com/2025/01/31/deepseeks-ai-innovation-a-shift-in-ai-model-efficiency-and-cost-structure/"]],
+ more:[["DeepSeek V4-Pro on Hugging Face","https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"]]},
+{date:"Aug 7, 2025",title:"GPT-5",
+ detail:"OpenAI ships a unified router blending fast responses with deeper \"thinking\" mode in one system. OpenAI's own framing states it matches or exceeds human experts on roughly half of cross-occupation tasks tested — converging the chat and reasoning-model paradigms that had been racing separately.",
+ sources:[["OpenAI: Introducing GPT-5","https://openai.com/index/introducing-gpt-5/"]],
+ more:[["OpenAI: Introducing o3 and o4-mini","https://openai.com/index/introducing-o3-and-o4-mini/"]]},
+{date:"Nov 24, 2025",title:"Claude Opus 4.5",
+ detail:"Anthropic releases Claude Opus 4.5, positioned as best-in-world for coding, agentic workflows, and computer use, scoring 80.9% on SWE-bench Verified — reinforcing agentic AI as the dominant capability narrative going into 2026.",
+ sources:[["Anthropic: Introducing Claude Opus 4.5","https://www.anthropic.com/news/claude-opus-4-5"],["MacRumors coverage","https://www.macrumors.com/2025/11/24/anthropic-claude-opus-4-5/"]],
+ more:[["Anthropic: Building Effective Agents","https://www.anthropic.com/engineering/building-effective-agents"]]},
+{date:"Apr 13, 2026",title:"Stanford HAI's 2026 AI Index Report",
+ detail:"Stanford's 9th annual AI Index reports global corporate AI investment of $581.7B in 2025 (+130% YoY), generative AI adoption reaching 53% of the world's population within three years, a narrowed 2.7% US–China frontier-model gap, and a ~20% drop in software-developer employment aged 22–25 since 2024.",
+ sources:[["The 2026 AI Index Report — Stanford HAI","https://hai.stanford.edu/ai-index/2026-ai-index-report"],["12 Takeaways from the 2026 Report","https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report"],["IEEE Spectrum coverage","https://spectrum.ieee.org/state-of-ai-index-2026"]],
+ more:[]},
+{date:"Mid-2026 — today",title:"A closely matched, multi-lab race — and an open question",
+ detail:"No single \"best\" model exists today: OpenAI, Anthropic, Google, and DeepSeek leapfrog one another every few weeks. Real-world agent deployments still show roughly a 37% gap between lab-benchmark scores and real-world performance. Underneath it all, the AGI question remains genuinely, openly contested — see the Frontier &amp; AGI page.",
+ sources:[["Fortune: AI luminaries at Davos clash over AGI timelines","https://fortune.com/2026/01/23/deepmind-demis-hassabis-anthropic-dario-amodei-yann-lecun-ai-davos/"]],
+ more:[["Gary Marcus: predictions for AI 2026","https://garymarcus.substack.com/p/six-or-seven-predictions-for-ai-2026"],["80,000 Hours: AGI timelines in 2025","https://80000hours.substack.com/p/what-the-hell-happened-with-agi-timelines"]]}
+];
+const tlList = document.getElementById('tlList');
+function srcLinks(arr){ if(!arr||!arr.length) return ''; return `<div class="tl-sources">${arr.map(([l,u])=>`<a class="tl-src" href="${u}" target="_blank" rel="noopener noreferrer">🔗 ${l}</a>`).join('')}</div>`; }
+timeline.forEach(t=>{
+  const item=document.createElement('div'); item.className='tl-item';
+  let html=`<p>${t.detail}</p>`;
+  if(t.sources.length) html+=`<div class="tl-more-title">Primary sources</div>${srcLinks(t.sources)}`;
+  if(t.more.length) html+=`<div class="tl-more-title">Learn more</div>${srcLinks(t.more)}`;
+  item.innerHTML=`<div class="tl-dot"></div><div class="tl-card" role="button" tabindex="0" aria-expanded="false" aria-label="${t.date}: ${t.title}. Expand for detail and sources."><span class="tl-plus" aria-hidden="true">+</span><div class="tl-date">${t.date}</div><div class="tl-title">${t.title}</div><div class="tl-detail">${html}</div></div>`;
+  const card=item.querySelector('.tl-card');
+  function toggle(){ const o=card.classList.toggle('open'); card.setAttribute('aria-expanded',o?'true':'false'); }
+  card.addEventListener('click',toggle);
+  card.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+  tlList.appendChild(item);
+});
+function updateTimeline(){
+  const items=document.querySelectorAll('.tl-item'); const outer=document.getElementById('tlOuter');
+  const rect=outer.getBoundingClientRect(); const vh=window.innerHeight; const total=rect.height;
+  const scrolled=Math.min(Math.max(vh*0.75-rect.top,0),total);
+  document.getElementById('tlFill').style.height=(scrolled/total*100)+'%';
+  items.forEach(it=>{ if(it.getBoundingClientRect().top<vh*0.8) it.classList.add('in'); });
+}
+window.addEventListener('scroll',updateTimeline); updateTimeline();
+</script>
+</body>
+</html>

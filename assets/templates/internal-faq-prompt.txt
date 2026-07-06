@@ -1,0 +1,32 @@
+INTERNAL FAQ BUILDER — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Paste in the recurring questions your team actually
+asks (from Slack, email, or memory) and the AI structures them into
+a proper internal FAQ document.
+
+---
+
+I want to build an internal FAQ for [team/topic, e.g. "our expense
+reimbursement process" or "how we handle client requests"].
+
+HERE ARE THE QUESTIONS PEOPLE ACTUALLY ASK, roughly, with whatever
+answer I know off the top of my head (some may be incomplete —
+flag those):
+[list as many real recurring questions as you can, with rough answers]
+
+Turn this into a structured FAQ:
+1. Group related questions together under clear headings.
+2. Write each answer clearly and completely — if my rough answer was
+   incomplete, flag exactly what's missing rather than inventing the
+   missing part.
+3. Order questions by how often they likely come up, most common first.
+4. Add a "last updated" placeholder and a note on who to ask if the
+   FAQ doesn't cover a new question.
+
+Flag any question where you don't have enough information from me to
+give a confident answer, rather than guessing.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

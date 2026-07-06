@@ -1,0 +1,40 @@
+AI TOOL EVALUATION CHECKLIST
+Zero → Frontier — free, ungated, no attribution required
+
+Use this before adopting any new AI tool, not just the big four
+covered on the Tools page.
+
+1. FIT
+   [ ] I can name the specific recurring task this tool solves.
+   [ ] I've checked whether a tool I already use can do this instead
+       of adding a new one (see "lean stack" on the Tools page).
+
+2. DATA HANDLING
+   [ ] I've read (not skimmed) the tool's data-use and privacy policy.
+   [ ] I know whether my inputs are used for model training by default.
+   [ ] I know where the tool is hosted and what jurisdiction governs it.
+
+3. COST STRUCTURE
+   [ ] I understand the free-tier limits, not just that a free tier
+       exists.
+   [ ] I know what happens if I exceed usage — hard stop, overage
+       charge, or throttling.
+   [ ] I've checked pricing on the provider's own site, not a
+       third-party summary that may be outdated.
+
+4. RELIABILITY
+   [ ] I've tested it on a real, low-stakes version of my actual task
+       before trusting it with anything important.
+   [ ] I know what the tool does when it doesn't know something —
+       does it say so, or guess confidently?
+
+5. EXIT PLAN
+   [ ] I can export or access my data if I stop using this tool.
+   [ ] I'm not building a workflow so dependent on one tool's specific
+       quirks that switching later would be painful.
+
+6. HUMAN OVERSIGHT
+   [ ] There's a clear human checkpoint before this tool's output can
+       trigger anything irreversible (see the Human Review Checklist).
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

@@ -1,0 +1,33 @@
+HUMAN REVIEW CHECKLIST FOR AI OUTPUT
+Zero → Frontier — free, ungated, no attribution required
+
+Use this before you send, publish, or act on anything AI helped produce.
+
+1. FACTUAL CLAIMS
+   [ ] Every number, date, name, and statistic has been checked against a source I trust — not assumed correct because it sounds confident.
+   [ ] I have not asked the model for information it cannot reliably know (e.g., very recent events, private data about specific individuals).
+
+2. ATTRIBUTION AND OWNERSHIP
+   [ ] Any claim attributed to a person, company, or study is verified, not merely plausible.
+   [ ] I have not presented AI-drafted analysis as if it came from a named expert or authority.
+
+3. TONE AND VOICE
+   [ ] The output sounds like me / my organization, not generic AI phrasing.
+   [ ] I have removed filler, hedging, or repeated boilerplate the model tends to default to.
+
+4. IRREVERSIBLE ACTIONS
+   [ ] Nothing here triggers a send, payment, deletion, or public post without a separate, deliberate confirmation step from a human.
+   [ ] If this touches money, legal terms, medical information, or someone's employment — a qualified professional has reviewed it, not just me.
+
+5. PRIVACY AND CONFIDENTIALITY
+   [ ] I have not pasted confidential, proprietary, or personally identifying information into a tool without checking that tool's data-handling terms first.
+   [ ] If this was a client or employer's information, I have their consent to process it this way.
+
+6. BIAS AND FAIRNESS
+   [ ] I have reread this for any stereotype, assumption, or exclusionary language that a first draft might introduce without intent.
+
+7. FINAL CHECK
+   [ ] I would be comfortable putting my name on this exactly as written.
+   [ ] If I skipped any box above, I know why, and I've flagged it to whoever reviews this next.
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.

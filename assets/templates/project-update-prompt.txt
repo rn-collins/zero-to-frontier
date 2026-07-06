@@ -1,0 +1,33 @@
+PROJECT UPDATE — RUN THIS PROMPT IN YOUR AI TOOL OF CHOICE
+Zero → Frontier — free, ungated, no attribution required
+
+HOW TO USE THIS: Paste in your raw project notes/status and get a
+clean status update in the format your stakeholders actually want —
+without spending the usual 20+ minutes formatting it yourself.
+
+---
+
+I need a project status update. Here's the raw information:
+
+PROJECT: [name]
+WHAT'S HAPPENED SINCE THE LAST UPDATE: [messy notes are fine]
+WHAT'S BLOCKING PROGRESS, IF ANYTHING: [list it honestly]
+WHAT'S NEXT: [rough plan]
+AUDIENCE: [e.g. "my manager," "the client," "the whole team"]
+
+Turn this into a status update with:
+1. Overall status: On track / At risk / Blocked (pick the honest one
+   based on what I told you — don't default to "on track" if what I
+   described sounds risky)
+2. What's done since last update (2-4 bullet points, specific not vague)
+3. What's blocking, if anything, and what's needed to unblock it
+4. What's next
+5. One sentence a busy reader could read alone and understand the
+   whole status from
+
+Match the tone to my audience — more detail and context for the team,
+more concise and outcome-focused for a client or executive.
+
+---
+
+Free to copy, adapt, and reuse. Part of the Zero → Frontier project.
