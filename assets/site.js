@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function(){
     reveals.forEach(el=>el.classList.add('show'));
   }
 
+  document.querySelectorAll('.foot-col p').forEach(function(p){
+    if(p.textContent.includes('fully-sourced guide')) p.textContent = 'A free, source-forward guide to understanding and using artificial intelligence.';
+  });
+
   const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   const volatile = ['tools.html','frontier.html','library.html'].includes(current);
   const freshness = document.createElement('aside');
