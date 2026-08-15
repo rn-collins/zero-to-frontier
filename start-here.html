@@ -69,8 +69,69 @@
   <div class="wrap">
     <div class="crumb"><a href="index.html">Home</a> / Start Here</div>
     <div class="kicker">Page 01 of 11</div>
-    <h1>Not sure where to start? Answer this and we'll route you.</h1>
-    <p class="lede">Ten pages, no forced order. This page exists so you don't have to guess — pick what brought you here, or how much time you have, and go straight to the right place. No email, no account, nothing to sign up for.</p>
+    <h1>Build an AI learning route that fits the work.</h1>
+    <p class="lede">AI literacy depends on who is using the system, for what purpose, at what level of risk, and who may be affected. Build a route below or use the curated starting points. No email, account, or server-side profile.</p>
+  </div>
+</section>
+
+<section aria-labelledby="route-builder-heading">
+  <div class="wrap">
+    <div class="kicker">Build your route</div>
+    <h2 id="route-builder-heading">Turn “learn AI” into a specific, reviewable learning plan</h2>
+    <p class="lede">Choose your context, goal, stakes, and time. The result is deterministic, stays in your browser, and routes you through the existing curriculum with a human-review rule suited to the work.</p>
+    <form class="route-builder" id="literacyRoute">
+      <div class="route-form-grid">
+        <div class="route-field">
+          <label for="routeContext">I am learning as…</label>
+          <select id="routeContext" name="context">
+            <option value="individual">an individual or creator</option>
+            <option value="student">a student or educator</option>
+            <option value="professional">a professional using AI at work</option>
+            <option value="leader">a founder, manager, or team lead</option>
+          </select>
+        </div>
+        <div class="route-field">
+          <label for="routeGoal">My immediate goal is…</label>
+          <select id="routeGoal" name="goal">
+            <option value="understand">understand what AI is and is not</option>
+            <option value="use">use it better on a real task</option>
+            <option value="choose">choose tools without chasing hype</option>
+            <option value="govern">set safe rules for a team or project</option>
+            <option value="build">build or automate something</option>
+          </select>
+        </div>
+        <fieldset class="route-field" style="border:0;padding:0;margin:0">
+          <legend>What are the stakes?</legend>
+          <div class="stakes-row">
+            <label><input type="radio" name="stakes" value="low" checked> Low</label>
+            <label><input type="radio" name="stakes" value="medium"> Meaningful</label>
+            <label><input type="radio" name="stakes" value="high"> Rights, money, health, safety, or reputation</label>
+          </div>
+        </fieldset>
+        <div class="route-field">
+          <label for="routeTime">Time available now</label>
+          <select id="routeTime" name="time">
+            <option value="15">15 minutes</option>
+            <option value="45" selected>45 minutes</option>
+            <option value="120">2 hours</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit" style="margin-top:20px">Build my learning route →</button>
+      <div class="route-output" id="routeOutput" hidden aria-live="polite">
+        <div class="tag" id="routeLabel"></div>
+        <h3 id="routeTitle"></h3>
+        <ol id="routeSteps"></ol>
+        <p class="guardrail" id="routeGuardrail"></p>
+        <div class="btn-row" id="routeLinks"></div>
+      </div>
+    </form>
+    <div class="standard-grid" aria-label="Standards informing this route builder">
+      <div class="standard-card"><h3>UNESCO competencies</h3><p>Human-centred mindset, ethics, foundations and applications, and responsible design—not tool tricks alone.</p></div>
+      <div class="standard-card"><h3>NIST AI RMF</h3><p>Govern, map, measure, and manage risk in context, with testing and documentation proportional to impact.</p></div>
+      <div class="standard-card"><h3>EU AI literacy</h3><p>Learning should reflect technical knowledge, experience, context of use, and the people affected by the system.</p></div>
+    </div>
+    <p style="color:var(--sub2);font-size:.78rem;margin-top:14px">Framework references: <a href="https://www.unesco.org/en/articles/ai-competency-framework-students" target="_blank" rel="noopener noreferrer">UNESCO AI Competency Framework</a> · <a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence" target="_blank" rel="noopener noreferrer">NIST Generative AI Profile</a> · <a href="https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers" target="_blank" rel="noopener noreferrer">European Commission AI Literacy FAQ</a>.</p>
   </div>
 </section>
 
@@ -177,6 +238,43 @@
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  const form=document.getElementById('literacyRoute');
+  const routes={
+    understand:[['History: separate recurring ideas from the current product cycle','history.html'],['Concepts: build the minimum technical model','concepts.html'],['Frontier: identify what remains unsettled','frontier.html']],
+    use:[['Techniques: structure context, task, constraints, and checks','techniques.html'],['Use Cases: inspect a worked application','use-cases.html'],['Templates: adapt one reusable workflow','templates.html']],
+    choose:[['Concepts: clarify what capability the task requires','concepts.html'],['Tools: compare categories and current provider evidence','tools.html'],['Library: verify terms and documentation at the source','library.html']],
+    govern:[['Concepts: name the system and affected people','concepts.html'],['Use Cases: map benefits, failures, and reviewers','use-cases.html'],['Playbooks: document an approval and escalation workflow','playbooks.html']],
+    build:[['Techniques: choose the smallest workable method','techniques.html'],['Playbooks: define inputs, outputs, review, and failure handling','playbooks.html'],['Templates: create the operating artifact','templates.html']]
+  };
+  const guardrails={
+    low:'Low stakes still require a quick factual check. Do not paste confidential, personal, privileged, or licensed material into a tool without authorization.',
+    medium:'Use a named human reviewer, preserve important sources, and test the output against a known example before relying on it.',
+    high:'Do not treat model output as the decision. Require qualified human review, source verification, documented approval, and a non-AI fallback or escalation path.'
+  };
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const goal=document.getElementById('routeGoal').value;
+    const context=document.getElementById('routeContext').selectedOptions[0].text;
+    const time=document.getElementById('routeTime').value;
+    const stakes=form.querySelector('input[name="stakes"]:checked').value;
+    const count=time==='15'?1:time==='45'?2:3;
+    const chosen=routes[goal].slice(0,count);
+    document.getElementById('routeLabel').textContent=context+' · '+time+' minutes';
+    document.getElementById('routeTitle').textContent='Your '+count+'-step route';
+    const list=document.getElementById('routeSteps'); list.innerHTML='';
+    const links=document.getElementById('routeLinks'); links.innerHTML='';
+    chosen.forEach(function(item,i){
+      const li=document.createElement('li'); li.textContent=item[0]; list.appendChild(li);
+      const a=document.createElement('a'); a.className=i===0?'btn btn-primary':'btn btn-ghost'; a.href=item[1]; a.textContent=(i===0?'Start: ':'Then: ')+item[1].replace('.html','').replace('-',' '); links.appendChild(a);
+    });
+    document.getElementById('routeGuardrail').textContent='Human-review rule: '+guardrails[stakes];
+    document.getElementById('routeOutput').hidden=false;
+    document.getElementById('routeOutput').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
+  });
+})();
+</script>
 <script src="assets/site.js"></script>
 </body>
 </html>
