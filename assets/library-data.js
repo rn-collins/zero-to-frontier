@@ -1,4 +1,4 @@
-// [module, section, title, url, format, blurb, time] — 144 verified free resources
+// [module, section, title, url, format, blurb, time] — 237 curated resources in the August 2026 edition
 const LIB = [
 ["Foundations & Prompt Engineering","Core Concepts","Google AI Studio — Prompt design guidelines","https://ai.google.dev/gemini-api/docs/prompting-intro","Doc","Google's official primer on what generative models are and how to talk to them, for total beginners.","20 min"],
 ["Foundations & Prompt Engineering","Core Concepts","3Blue1Brown: But what is a GPT? Visual intro to Transformers","https://www.3blue1brown.com/lessons/gpt/","Video","Hand-animated walkthrough of tokenization, embeddings, and next-token prediction.","27 min"],
