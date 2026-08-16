@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zero-to-frontier.vercel.app/sitemap.xml
