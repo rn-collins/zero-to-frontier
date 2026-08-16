@@ -1,0 +1,10 @@
+{
+  "product": "Zero to Frontier",
+  "canonical_url": "https://zero-to-frontier.vercel.app",
+  "canonical_repository": "https://github.com/rn-collins/zero-to-frontier",
+  "active_vercel_project": "zero-to-frontier",
+  "superseded_vercel_project": "z2f-live",
+  "legacy_url": "https://z2f-live.vercel.app",
+  "legacy_behavior": "Client redirect to the canonical URL, preserving path, query, and fragment.",
+  "reviewed": "2026-08-15"
+}
