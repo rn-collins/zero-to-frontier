@@ -1,4 +1,16 @@
-// Shared behavior: navigation, motion-safe reveals, freshness disclosure, and local progress.
+// Shared behavior: canonical routing, navigation, motion-safe reveals, freshness disclosure, and local progress.
+if (location.hostname === 'z2f-live.vercel.app') {
+  location.replace('https://zero-to-frontier.vercel.app' + location.pathname + location.search + location.hash);
+}
+
+const canonicalPath = location.pathname === '/index.html' ? '/' : location.pathname;
+let canonical = document.querySelector('link[rel="canonical"]');
+if (!canonical) {
+  canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  document.head.appendChild(canonical);
+}
+canonical.href = 'https://zero-to-frontier.vercel.app' + canonicalPath;
 document.addEventListener('DOMContentLoaded', function(){
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
